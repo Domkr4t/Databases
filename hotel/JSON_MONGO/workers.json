@@ -1,0 +1,93 @@
+[
+  {
+    "id_worker": "01",
+    "name_worker": "Егоров Зиновий Дамирович",
+    "position_worker": "Повар",
+    "experience_worker": 3
+  },
+  {
+    "id_worker": "02",
+    "name_worker": "Хохлов Иосиф Георгьевич",
+    "position_worker": "Повар",
+    "experience_worker": 1
+  },
+  {
+    "id_worker": "03",
+    "name_worker": "Шилова Лайма Егоровна",
+    "position_worker": "Горничная",
+    "experience_worker": 0
+  },
+  {
+    "id_worker": "04",
+    "name_worker": "Орлов Артур Валерьевич",
+    "position_worker": "Менеджер отеля",
+    "experience_worker": 12
+  },
+  {
+    "id_worker": "05",
+    "name_worker": "Дмитриев Рудольф Николаевич",
+    "position_worker": "Повар",
+    "experience_worker": 7
+  },
+  {
+    "id_worker": "06",
+    "name_worker": "Капустина Нила Улебовна",
+    "position_worker": "Горничная",
+    "experience_worker": 7
+  },
+  {
+    "id_worker": "07",
+    "name_worker": "Ефремова Юфеза Валентиновна",
+    "position_worker": "Портье",
+    "experience_worker": 4
+  },
+  {
+    "id_worker": "08",
+    "name_worker": "Савельева София Григорьевна",
+    "position_worker": "Горничная",
+    "experience_worker": 4
+  },
+  {
+    "id_worker": "09",
+    "name_worker": "Дмитриев Рудольф Николаевич",
+    "position_worker": "Администратор",
+    "experience_worker": 5
+  },
+  {
+    "id_worker": "10",
+    "name_worker": "Панфилова Мирра Иосифовна",
+    "position_worker": "Повар",
+    "experience_worker": 6
+  },
+  {
+    "id_worker": "11",
+    "name_worker": "Кулаков Флор Парфеньевич",
+    "position_worker": "Портье",
+    "experience_worker": 1
+  },
+  {
+    "id_worker": "12",
+    "name_worker": "Кузьмина Яна Вадимовна",
+    "position_worker": "Заместитель менеджера отеля",
+    "experience_worker": 10
+  },
+  {
+    "id_worker": "13",
+    "name_worker": "Королёв Ибрагил Игнатьевич",
+    "position_worker": "Консьерж",
+    "experience_worker": 9
+  },
+  {
+    "id_worker": "14",
+    "name_worker": "Ширяева Диана Станиславовна",
+    "position_worker": "Консьерж",
+    "experience_worker": 8
+  },
+  {
+    "id_worker": "15",
+    "name_worker": "Кононова Вероника Фроловна",
+    "position_worker": "Консьерж",
+    "experience_worker": 3
+  },
+
+]

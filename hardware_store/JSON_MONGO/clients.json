@@ -1,0 +1,77 @@
+[
+  {
+    "client_id": 1,
+    "client_name": "Панкратов Илья Алексеевич",
+    "client_telephone": "+7(999)781-61-45"
+  },
+  {
+    "client_id": 2,
+    "client_name": "Худшев Худший Худшеевич",
+    "client_telephone": "+7(999)703-11-69"
+  },
+  {
+    "client_id": 3,
+    "client_name": "Алешкина Ольга Вячеславовна",
+    "client_telephone": "+7(999)924-11-98"
+  },
+  {
+    "client_id": 4,
+    "client_name": "Иванов Иван Иванович",
+    "client_telephone": "+7(999)554-15-32"
+  },
+  {
+    "client_id": 5,
+    "client_name": "Скиба Артур Романович",
+    "client_telephone": "+7(999)123-00-09"
+  },
+  {
+    "client_id": 6,
+    "client_name": "Крутой Крутик Крутевич",
+    "client_telephone": "+7(999)498-55-90"
+  },
+  {
+    "client_id": 7,
+    "client_name": "Игнатьев Кирилл Тимурович",
+    "client_telephone": "+7(999)031-28-26"
+  },
+  {
+    "client_id": 8,
+    "client_name": "Князева Магда Богдановна",
+    "client_telephone": "+7(999)510-60-89"
+  },
+  {
+    "client_id": 9,
+    "client_name": "Прохорова Мартина Авксентьевна",
+    "client_telephone": "+7(999)336-97-91"
+  },
+  {
+    "client_id": 10,
+    "client_name": "Зайцев Бенедикт Макарович",
+    "client_telephone": "+7(999)907-40-86"
+  },
+  {
+    "client_id": 11,
+    "client_name": "Афанасьев Артем Романович",
+    "client_telephone": "+7(999)173-00-09"
+  },
+  {
+    "client_id": 12,
+    "client_name": "Гаврилова Изабелла Николаевна",
+    "client_telephone": "+7(999)192-27-17"
+  },
+  {
+    "client_id": 13,
+    "client_name": "Воронов Варлаам Мартынович",
+    "client_telephone": "+7(999)540-24-25"
+  },
+  {
+    "client_id": 14,
+    "client_name": "Фокина Евгения Леонидовна",
+    "client_telephone": "+7(999)338-31-45"
+  },
+  {
+    "client_id": 15,
+    "client_name": "Мясников Любомир Денисович",
+    "client_telephone": "+7(999)283-39-38"
+  }
+]

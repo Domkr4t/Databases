@@ -1,0 +1,92 @@
+[
+  {
+    "product_id": 1,
+    "product_name": "Телевизор",
+    "product_comment": "диагональ (точно) 31.5",
+    "product_price": 99
+  },
+  {
+    "product_id": 2,
+    "product_name": "MAC",
+    "product_comment": "Проц:Apple, M1, 3.2 ГГц",
+    "product_price": 100
+  },
+  {
+    "product_id": 3,
+    "product_name": "Pixel 6",
+    "product_comment": "Экран:6.71, 3120x1440 (19.5:9), 120 Гц, 513 ppi",
+    "product_price": 150
+  },
+  {
+    "product_id": 4,
+    "product_name": "Samsung S21",
+    "product_comment": "Экран:6.2, 2400x1080 (20:9), 120 Гц, 421 ppi",
+    "product_price": 199099
+  },
+  {
+    "product_id": 5,
+    "product_name": "ZTE HZ",
+    "product_comment": "Экран:5.45, 1440х720 (18:9), 295 ppi",
+    "product_price": 200
+  },
+  {
+    "product_id": 6,
+    "product_name": "Honor 20 pro",
+    "product_comment": "Экран:6.26, 2340x1080 (19.5:9), 412 ppi",
+    "product_price": 222
+  },
+  {
+    "product_id": 7,
+    "product_name": "Huawei P50 PRO",
+    "product_comment": "Экран:6.6, 2700x1228, 120 Гц, 458 ppi",
+    "product_price": 300
+  },
+  {
+    "product_id": 8,
+    "product_name": "Xiaomi Note 10",
+    "product_comment": "Экран:6.67, 2400x1080 (20:9), 120 Гц, 395 ppi",
+    "product_price": 999
+  },
+  {
+    "product_id": 9,
+    "product_name": "Vivo X70",
+    "product_comment": "Экран:6.56, изогнутый, 2376x1080, 120 Гц, 398 ppi",
+    "product_price": 1010
+  },
+  {
+    "product_id": 10,
+    "product_name": "Oppo 9 PRO",
+    "product_comment": "Экран:6.4, 2400x1080 (20:9), 90 Гц, 411 ppi",
+    "product_price": "5000,4902"
+  },
+  {
+    "product_id": 11,
+    "product_name": "Nvidia GTX 3080 SUPER",
+    "product_comment": "Объем памяти: 10 Гб",
+    "product_price": 9999
+  },
+  {
+    "product_id": 12,
+    "product_name": "Amazon  электронная книга",
+    "product_comment": "Дисплей:6, 800x600 пикс",
+    "product_price": "10000"
+  },
+  {
+    "product_id": 13,
+    "product_name": "Sony XPERIA Z3",
+    "product_comment": "Экран:5.2, 1920x1080 (16:9), 424 ppi",
+    "product_price": 12341
+  },
+  {
+    "product_id": 14,
+    "product_name": "Nokia 3310",
+    "product_comment": "Экран:2.4, 320x240, 167 ppi",
+    "product_price": 54221
+  },
+  {
+    "product_id": 15,
+    "product_name": "Lenovo IdeaPad",
+    "product_comment": "Дисплей:14, 1920x1080 (16:9)",
+    "product_price": 69999
+  }
+]

@@ -1,0 +1,93 @@
+[
+    {
+        "id_client": "01",
+        "name_client": "Панкратов Илья Алексеевич'",
+        "telephone_client": "+7(926)092-97-30",
+        "passport_client": "46 01 133293"
+    },
+    {
+        "id_client": "02",
+        "name_client": "Худшев Худший Худшеевич",
+        "telephone_client": "+7(999)703-11-69",
+        "passport_client": "46 02 651187"
+    },
+    {
+        "id_client": "03",
+        "name_client": "Иванов Иван Иванович",
+        "telephone_client": "+7(999)554-15-32",
+        "passport_client": "46 04 992093"
+    },
+    {
+        "id_client": "04",
+        "name_client": "Алешкина Ольга Вячеславовна",
+        "telephone_client": "+7(904)36-45-98",
+        "passport_client": "46 03 471506"
+    },
+    {
+        "id_client": "05",
+        "name_client": "Скиба Артур Романович",
+        "telephone_client": "+7(999)123-00-09",
+        "passport_client": "46 05 841668"
+    },
+    {
+        "id_client": "06",
+        "name_client": "Крутой Крутик Крутевич",
+        "telephone_client": "+7(999)498-55-90",
+        "passport_client": "46 06 342462"
+    },
+    {
+        "id_client": "07",
+        "name_client": "Игнатьев Кирилл Тимурович",
+        "telephone_client": "+7(999)031-28-26",
+        "passport_client": "46 07 390301"
+    },
+    {
+        "id_client": "08",
+        "name_client": "Князева Магда Богдановна'",
+        "telephone_client": "+7(999)510-60-89",
+        "passport_client": "46 08 990493"
+    },
+    {
+        "id_client": "09",
+        "name_client": "Прохорова Мартина Авксентьевна",
+        "telephone_client": "+7(999)336-97-91",
+        "passport_client": "46 09 918525"
+    },
+    {
+        "id_client": "10",
+        "name_client": "Зайцев Бенедикт Макарович",
+        "telephone_client": "+7(999)907-40-86",
+        "passport_client": "46 10 502288"
+    },
+    {
+        "id_client": "11",
+        "name_client": "Гаврилова Изабелла Николаевна",
+        "telephone_client": "+7(999)192-27-17",
+        "passport_client": "46 12 124838"
+    },
+    {
+        "id_client": "12",
+        "name_client": "Афанасьев Артем Романович",
+        "telephone_client": "+7(999)173-00-09",
+        "passport_client": "46 11 835171"
+    },
+    {
+        "id_client": "13",
+        "name_client": "Воронов Варлаам Мартынович'",
+        "telephone_client": "+7(999)540-24-25",
+        "passport_client": "46 13 355041"
+    },
+    {
+        "id_client": "14",
+        "name_client": "Фокина Евгения Леонидовна",
+        "telephone_client": "+7(999)338-31-45",
+        "passport_client": "46 14 505111"
+    },
+    {
+        "id_client": "15",
+        "name_client": "Мясников Любомир Денисович",
+        "telephone_client": "+7(999)283-39-38",
+        "passport_client": "46 15 312973"
+    }
+
+]

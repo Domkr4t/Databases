@@ -1,0 +1,78 @@
+[
+    {
+        "id_priceroom": "01",
+        "price_room": 12999,
+        "number_room": "04"
+    },
+    {
+        "id_priceroom": "02",
+        "price_room": 1399,
+        "number_room": "08"
+    },
+    {
+        "id_priceroom": "03",
+        "price_room": 9999,
+        "number_room": "10"
+    },
+    {
+        "id_priceroom": "04",
+        "price_room": 13999,
+        "number_room": "03"
+    },
+    {
+        "id_priceroom": "05",
+        "price_room": 15999,
+        "number_room": "12"
+    },
+    {
+        "id_priceroom": "06",
+        "price_room": 9499,
+        "number_room": "09"
+    },
+    {
+        "id_priceroom": "07",
+        "price_room": 17499,
+        "number_room": "01"
+    },
+    {
+        "id_priceroom": "08",
+        "price_room": 18999,
+        "number_room": "11"
+    },
+    {
+        "id_priceroom": "09",
+        "price_room": 13499,
+        "number_room": "07"
+    },
+    {
+        "id_priceroom": "10",
+        "price_room": 24399,
+        "number_room": "13"
+    },
+    {
+        "id_priceroom": "11",
+        "price_room": 15899,
+        "number_room": "06"
+    },
+    {
+        "id_priceroom": "12",
+        "price_room": 20699,
+        "number_room": "02"
+    },
+    {
+        "id_priceroom": "13",
+        "price_room": 12000,
+        "number_room": "14"
+    },
+    {
+        "id_priceroom": "14",
+        "price_room": 9300,
+        "number_room": "15"
+    },
+    {
+        "id_priceroom": "15",
+        "price_room": 13300,
+        "number_room": "05"
+    },
+
+]

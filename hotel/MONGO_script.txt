@@ -1,0 +1,43 @@
+_______Информация о клиентах________
+db.client.find( {}, {_id: 0} )
+
+_____Поиск клиента по паспорту____________
+db.client.findOne( {passport_client: "46 02 651187"}, {_id: 0} )
+
+_____Комнаты где одно спальное место___________
+db.room.find( {number_berths: 1}, {_id: 0} )
+
+______Работники в алфавитном порядке у которых стаж более 5 лет________________
+db.worker.find( {experience_worker: {$gte: 5} }, {_id: 0} ).sort( {"name_worker": 1} )
+
+_____Информация о резервации в конкретный день____________________________
+db.reservation.find( {date_reservation: "2021-03-12"}, {_id: 0} )
+
+_______Количество комнат каждого типа_____________
+db.room.aggregate ( [ {$group: {_id: "$type_room", count_of_type_room: {$count: {} } } } ] )
+
+_______________Количество поваров со стажем выше 4 лет________________________
+db.worker.count( {$and: [ {position_worker: "Повар" }, {experience_worker: {$gte: 4} } ] } )
+
+________Количество заселений в конкретный день___________________
+db.accommodation.count( {date_accommodation: "2021-04-08"} )
+
+______Поиск даты заселения конкертного человека______________
+db.client.aggregate( [ {
+    $lookup: {
+            from: "accommodation",
+            localField: "passport_client",
+            foreignField: "passport_client",
+            as: "Clients_accommodation"
+        }
+}] )
+
+______Стоимость каждой комнаты____________
+db.room.aggregate( [ {
+    "$lookup": {
+            from: "priceRoom",
+            localField: "number_room",
+            foreignField: "number_room",
+            as: "Price_rooms"
+        }
+} ] )

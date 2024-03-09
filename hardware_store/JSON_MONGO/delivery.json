@@ -1,0 +1,77 @@
+[
+  {
+    "delivery_id": 1,
+    "delivery_date": "2021-11-01 21:21:00",
+    "delivery_comment": "Поставка техники LG"
+  },
+  {
+    "delivery_id": 2,
+    "delivery_date": "2021-12-02 14:26:00",
+    "delivery_comment": "Поставка техники Apple"
+  },
+  {
+    "delivery_id": 3,
+    "delivery_date": "2021-05-02 00:00:00",
+    "delivery_comment": "Поставка техники Google"
+  },
+  {
+    "delivery_id": 4,
+    "delivery_date": "2021-06-03 21:49:00",
+    "delivery_comment": "Поставка техники Samsung"
+  },
+  {
+    "delivery_id": 5,
+    "delivery_date": "2021-08-05 14:16:00",
+    "delivery_comment": "Поставка техники ZTE"
+  },
+  {
+    "delivery_id": 6,
+    "delivery_date": "2021-10-06 20:05:00",
+    "delivery_comment": "Поставка техники Honor"
+  },
+  {
+    "delivery_id": 7,
+    "delivery_date": "2021-04-06 00:57:00",
+    "delivery_comment": "Поставка техники Huawei"
+  },
+  {
+    "delivery_id": 8,
+    "delivery_date": "2021-03-07 06:51:00",
+    "delivery_comment": "Поставка техники Xiaomi"
+  },
+  {
+    "delivery_id": 9,
+    "delivery_date": "2021-06-07 23:53:00",
+    "delivery_comment": "Поставка техники Vivo"
+  },
+  {
+    "delivery_id": 10,
+    "delivery_date": "2021-09-08 14:19:00",
+    "delivery_comment": "Поставка техники Oppo"
+  },
+  {
+    "delivery_id": 11,
+    "delivery_date": "2021-10-09 05:17:00",
+    "delivery_comment": "Поставка техники Nvidia"
+  },
+  {
+    "delivery_id": 12,
+    "delivery_date": "2021-10-09 23:48:00",
+    "delivery_comment": "Поставка техники Amazon"
+  },
+  {
+    "delivery_id": 13,
+    "delivery_date": "2021-08-09 15:49:00",
+    "delivery_comment": "Поставка техники Sony"
+  },
+  {
+    "delivery_id": 14,
+    "delivery_date": "2021-08-11 11:46:00",
+    "delivery_comment": "Поставка техники Nokia"
+  },
+  {
+    "delivery_id": 15,
+    "delivery_date": "2021-09-12 10:37:00",
+    "delivery_comment": "Поставка техники Lenovo"
+  }
+]

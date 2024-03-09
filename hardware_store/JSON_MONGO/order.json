@@ -1,0 +1,135 @@
+[
+  {
+    "order_id": 1,
+    "order_date": "2021-10-12",
+    "client": "Панкратов Илья Алексеевич",
+    "products": {
+      "0": "MAC",
+      "1": "IPhone 12 128GB Pro Max"
+    }
+  },
+  {
+    "order_id": 2,
+    "order_date": "2021-04-02",
+    "client": "Алешкина Ольга Вячеславовна",
+    "products": {
+      "0": "Honor 20 PRO"
+    }
+  },
+  {
+    "order_id": 3,
+    "order_date": "2021-03-03",
+    "client": "Иванов Иван Иванович",
+    "products": {
+      "0": "Vivo X70",
+      "1": "Apple AirPods"
+    }
+  },
+  {
+    "order_id": 4,
+    "order_date": "2021-04-02",
+    "client": "Худшев Худший Худшеевич",
+    "products": {
+      "0": "MAC",
+      "1": "IPhone 12 128GB Pro Max"
+    }
+  },
+  {
+    "order_id": 5,
+    "order_date": "2021-10-12",
+    "client": "Князева Магда Богдановна",
+    "products": {
+      "0": "Oppo 8",
+      "1": "Oppo MagicWatch",
+      "2": "Oppo EarPods"
+    }
+  },
+  {
+    "order_id": 6,
+    "order_date": "2021-10-12",
+    "client": "Крутой Крутик Крутевич",
+    "products": {
+      "0": "A4TECH T70"
+    }
+  },
+  {
+    "order_id": 7,
+    "order_date": "2021-08-15",
+    "client": "Скиба Артур Романович",
+    "products": {
+      "0": "ASUS TUF Gaming",
+      "1": "RedThunder K-800",
+      "2": "Honor 50"
+    }
+  },
+  {
+    "order_id": 8,
+    "order_date": "2021-08-15",
+    "client": "Игнатьев Кирилл Тимурович",
+    "products": {
+      "0": "IPhone 11 Pro "
+    }
+  },
+  {
+    "order_id": 9,
+    "order_date": "2021-08-09",
+    "client": "Воронов Варлаам Мартынович",
+    "products": {
+      "0": "MSI Modern 14",
+      "1": "Razer Basilisk"
+    }
+  },
+  {
+    "order_id": 10,
+    "order_date": "2021-04-02",
+    "client": "Афанасьев Артем Романович",
+    "products": {
+      "0": "Logitech G PRO Wireless",
+      "1": "Logitech G PRO X"
+    }
+  },
+  {
+    "order_id": 11,
+    "order_date": "2021-08-09",
+    "client": "Фокина Евгения Леонидовна",
+    "products": {
+      "0": "Trust GXT 210 Scorp",
+      "1": "Sony PlayStation 5 825 ГБ SSD",
+      "2": "Sony DualSense"
+    }
+  },
+  {
+    "order_id": 12,
+    "order_date": "2021-10-12",
+    "client": "Зайцев Бенедикт Макарович",
+    "products": {
+      "0": "VR Oculus Quest 2 - 128 GB"
+    }
+  },
+  {
+    "order_id": 13,
+    "order_date": "2021-04-10",
+    "client": "Гаврилова Изабелла Николаевна",
+    "products": {
+      "0": "Defender G-lens 2579 HD720p",
+      "1": "Fifine K669"
+    }
+  },
+  {
+    "order_id": 14,
+    "order_date": "2021-06-10",
+    "client": "Мясников Любомир Денисович",
+    "products": {
+      "0": "Logitech G G29 Driving Force",
+      "1": "Logitech G Driving Force Shifter"
+    }
+  },
+  {
+    "order_id": 15,
+    "order_date": "2021-10-12",
+    "client": "Прохорова Мартина Авксентьевна",
+    "products": {
+      "0": " Samsung UE43AU7100U 2021 LED"
+    }
+  }
+]

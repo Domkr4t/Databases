@@ -1,0 +1,92 @@
+[
+  {
+    "worker_id": 1,
+    "worker_name": "Колобова Элина Артемовна",
+    "worker_pos": "Кассир",
+    "worker_years_at_work": 3
+  },
+  {
+    "worker_id": 2,
+    "worker_name": "Романова Видана Наумовна",
+    "worker_pos": "Кассир",
+    "worker_years_at_work": 1
+  },
+  {
+    "worker_id": 3,
+    "worker_name": "Быкова Селена Никитевна",
+    "worker_pos": "Кассир",
+    "worker_years_at_work": 0
+  },
+  {
+    "worker_id": 4,
+    "worker_name": "Якушева Белла Иринеевна",
+    "worker_pos": "Кассир",
+    "worker_years_at_work": 12
+  },
+  {
+    "worker_id": 5,
+    "worker_name": "Скиба Артур Романович",
+    "worker_pos": "Кассир",
+    "worker_years_at_work": 7
+  },
+  {
+    "worker_id": 6,
+    "worker_name": "Капустина Нила Улебовна",
+    "worker_pos": "Главный кассир",
+    "worker_years_at_work": 7
+  },
+  {
+    "worker_id": 7,
+    "worker_name": "Ефремова Юфеза Валентиновна",
+    "worker_pos": "Главный кассир",
+    "worker_years_at_work": 4
+  },
+  {
+    "worker_id": 8,
+    "worker_name": "Савельева София Григорьевна",
+    "worker_pos": "Главный кассир",
+    "worker_years_at_work": 4
+  },
+  {
+    "worker_id": 9,
+    "worker_name": "Зимин Варлаам Якунович",
+    "worker_pos": "Кассир",
+    "worker_years_at_work": 5
+  },
+  {
+    "worker_id": 10,
+    "worker_name": "Третьяков Игорь Мэлорович",
+    "worker_pos": "Кассир",
+    "worker_years_at_work": 6
+  },
+  {
+    "worker_id": 11,
+    "worker_name": "Фадеев Феликс Даниилович",
+    "worker_pos": "Главный кассир",
+    "worker_years_at_work": 1
+  },
+  {
+    "worker_id": 12,
+    "worker_name": "Александров Исаак Агафонович",
+    "worker_pos": "Кассир",
+    "worker_years_at_work": 10
+  },
+  {
+    "worker_id": 13,
+    "worker_name": "Королёв Ибрагил Игнатьевич",
+    "worker_pos": "Кассир",
+    "worker_years_at_work": 9
+  },
+  {
+    "worker_id": 14,
+    "worker_name": "Шарапов Гавриил Дмитрьевич",
+    "worker_pos": "Кассир",
+    "worker_years_at_work": 8
+  },
+  {
+    "worker_id": 15,
+    "worker_name": "Павлов Натан Георгьевич",
+    "worker_pos": "Кассир",
+    "worker_years_at_work": 3
+  }
+]

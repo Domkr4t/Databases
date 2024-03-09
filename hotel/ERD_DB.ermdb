@@ -1,0 +1,30 @@
+<suzhnost>Room</suzhnost>
+<atribut>number_room//keyInt//int//0</atribut>
+<atribut>type_room//nokey//varchar//10</atribut>
+<atribut>number_berths//nokey//int//0</atribut>
+<suzhnost>Worker</suzhnost>
+<atribut>id_worker//keyInt//int//0</atribut>
+<atribut>name_worker//nokey//varchar//60</atribut>
+<atribut>position_worker//nokey//varchar//60</atribut>
+<atribut>experience_worker//nokey//int//0</atribut>
+<suzhnost>Client</suzhnost>
+<atribut>id_client//keyInt//int//0</atribut>
+<atribut>name_client//nokey//varchar//60</atribut>
+<atribut>passport_client//nokey//varchar//15</atribut>
+<atribut>telephone_client//nokey//varchar//20</atribut>
+<atribut>number_room(FK)//nokey//int//0</atribut>
+<suzhnost>PriceRoom </suzhnost>
+<atribut>id_priceroom//keyInt//int//0</atribut>
+<atribut>number_room(FK)//nokey//int//0</atribut>
+<atribut>price_room//nokey//int//0</atribut>
+<suzhnost>Reservation</suzhnost>
+<atribut>id_reservation//keyInt//int//0</atribut>
+<atribut>date_reservation//nokey//date//0</atribut>
+<atribut>number_room(FK)//nokey//int//0</atribut>
+<atribut>id_client(FK)//nokey//char//0</atribut>
+<suzhnost>Accommodation</suzhnost>
+<atribut>id_accommodation//keyInt//int//0</atribut>
+<atribut>date_accommodation//nokey//date//0</atribut>
+<atribut>number_room(FK)//nokey//int//0</atribut>
+<atribut>id_client//nokey//int//0</atribut>
+<svyaz>Room-Worker-1:N-manage by/manage;Room-PriceRoom -1:1-manage/manage by;Reservation-Room-1:N-manage by/manage;Room-Client-1:N-manage by/manage;Room-Accommodation-1:N-manage/manage by;Reservation-Client-1:N-manage by/manage;Client-Accommodation-1:N-manage/manage by;</svyaz>

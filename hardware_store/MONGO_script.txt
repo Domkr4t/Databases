@@ -1,0 +1,46 @@
+1_______________________________________
+
+db.product.find( { product_price: {$gt: 1000} } )
+
+db.worker.find( {$and: [ {worker_pos: "Главный кассир" }, {worker_years_at_work: {$gte: 4} } ] } )
+
+db.worker.find( {$and: [ {worker_pos: "Главный кассир" }, {worker_years_at_work: {$gte: 4} } ] } ).sort( {"worker_name": 1} )
+
+db.provider.find( {provider_name: {$in: ["LG", "Google"] } }, {"provider_address": 1, "provider_contacts": 1, _id: 0} )
+
+db.order.find ( {order_id: 2}, {_id:0} )
+
+
+2________________________________________
+
+db.order.count( {order_date: "2021-10-02"} )
+
+db.worker.count( {$and: [ {worker_pos: "Главный кассир" }, {worker_years_at_work: {$gte: 4} } ] } )
+
+db.worker.aggregate( [ { $group : {_id: "$worker_pos" , count_of_worker_position: {$count: {} } } } ] )
+
+
+3________________________________________
+db.client.aggregate( [ {
+    $lookup: {
+            from: "order",
+            localField: "client_name",
+            foreignField: "client",
+            as: "client_Order"
+        }
+}] )
+
+
+db.delivery.aggregate( [ {
+    "$lookup": {
+            from: "provider",
+            localField: "delivery_id",
+            foreignField: "provider_id",
+            as: "Info_about_provider_for_delivery"
+        }
+} ] )
+
+
+
+
+

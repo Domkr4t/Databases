@@ -1,0 +1,78 @@
+[
+    {
+        "id_accommodation": "01",
+        "date_accommodation": "2021-02-01",
+        "passport_client": "46 07 390301"
+    },
+    {
+        "id_accommodation": "02",
+        "date_accommodation": "2021-04-08",
+        "passport_client": "46 10 502288"
+    },
+    {
+        "id_accommodation": "03",
+        "date_accommodation": "2021-04-08",
+        "passport_client": "46 13 355041"
+    },
+    {
+        "id_accommodation": "04",
+        "date_accommodation": "2021-04-08",
+        "passport_client": "46 11 835171"
+    },
+    {
+        "id_accommodation": "05",
+        "date_accommodation": "2021-04-08",
+        "passport_client": "46 08 990493"
+    },
+    {
+        "id_accommodation": "06",
+        "date_accommodation": "2021-04-21",
+        "passport_client": "46 04 992093"
+    },
+    {
+        "id_accommodation": "07",
+        "date_accommodation": "2021-04-21",
+        "passport_client": "46 09 918525"
+    },
+    {
+        "id_accommodation": "08",
+        "date_accommodation": "2021-05-13",
+        "passport_client": "46 15 312973"
+    },
+    {
+        "id_accommodation": "09",
+        "date_accommodation": "2021-05-13",
+        "passport_client": "46 06 342462"
+    },
+    {
+        "id_accommodation": "10",
+        "date_accommodation": "2021-06-28",
+        "passport_client": "46 05 841668"
+    },
+    {
+        "id_accommodation": "11",
+        "date_accommodation": "2021-06-28",
+        "passport_client": "46 12 124838"
+    },
+    {
+        "id_accommodation": "12",
+        "date_accommodation": "2021-08-17",
+        "passport_client": "46 01 133293"
+    },
+    {
+        "id_accommodation": "13",
+        "date_accommodation": "2021-08-17",
+        "passport_client": "46 14 505111"
+    },
+    {
+        "id_accommodation": "14",
+        "date_accommodation": "2021-12-01",
+        "passport_client": "46 02 651187"
+    },
+    {
+        "id_accommodation": "15",
+        "date_accommodation": "2021-12-01",
+        "passport_client": "46 03 471506"
+    }
+
+]

@@ -1,0 +1,257 @@
+use LB3;
+	
+CREATE TABLE client 
+(	client_id int, 
+	client_name varchar(50) NOT NULL, 
+	client_telephone varchar(17) NOT NULL,
+	CONSTRAINT PK_client PRIMARY KEY (client_id)
+);
+
+CREATE TABLE worker 
+(	worker_id int, 
+	worker_name varchar(50) NOT NULL, 
+	worker_pos varchar(30) NOT NULL,
+	worker_years_at_work int NOT NULL,
+	CONSTRAINT PK_worker PRIMARY KEY (worker_id)
+);
+
+CREATE TABLE provider_ 
+(	provider_id int, 
+	provider_name varchar(30) NOT NULL, 
+	provider_address varchar(70) NOT NULL, 
+	provider_contacts varchar(60) NOT NULL,
+	CONSTRAINT PK_provider_ PRIMARY KEY (provider_id)
+);
+
+CREATE TABLE delivery 
+(	delivery_id int, 
+	delivery_date smalldatetime NOT NULL,
+	delivery_comment varchar(90) NOT NULL,
+	id_provider int
+	CONSTRAINT PK_delivery PRIMARY KEY (delivery_id)
+	CONSTRAINT FK_provider_ 
+		FOREIGN KEY (id_provider) 
+		REFERENCES provider_ (provider_id)
+);
+
+CREATE TABLE product 
+(	product_id int, 
+	product_name varchar(30) NOT NULL, 
+	product_comment varchar (99) NOT NULL,
+	product_price float (1) NOT NULL,
+	id_delivery int,
+	CONSTRAINT PK_product PRIMARY KEY (product_id),
+	CONSTRAINT FK_delivery 
+		FOREIGN KEY (id_delivery) 
+		REFERENCES delivery (delivery_id)
+);
+
+CREATE TABLE order_ 
+(	order_id int, 
+	order_date smalldatetime NOT NULL, 
+	id_worker int, 
+	id_client int, 
+	id_product int,                                       
+	CONSTRAINT PK_order PRIMARY KEY (order_id), 
+	CONSTRAINT FK_client 
+		FOREIGN KEY (id_client) 
+		REFERENCES client (client_id),
+	CONSTRAINT FK_worker 
+		FOREIGN KEY (id_worker) 
+		REFERENCES worker (worker_id),
+	CONSTRAINT FK_product 
+		FOREIGN KEY (id_product) 
+		REFERENCES product (product_id)
+);
+
+INSERT INTO client (client_id, client_name, client_telephone) VALUES 
+(01, 'Панкратов Илья Алексеевич', '+7(999)781-61-45'),
+(02, 'Худшев Худший Худшеевич', '+7(999)703-11-69'),
+(03, 'Алешкина Ольга Вячеславовна', '+7(999)924-11-98'),
+(04, 'Иванов Иван Иванович', '+7(999)554-15-32'),
+(05, 'Скиба Артур Романович', '+7(999)123-00-09'),
+(06, 'Крутой Крутик Крутевич', '+7(999)498-55-90'),
+(07, 'Игнатьев Кирилл Тимурович', '+7(999)031-28-26'),
+(08, 'Князева Магда Богдановна', '+7(999)510-60-89'),
+(09, 'Прохорова Мартина Авксентьевна', '+7(999)336-97-91'),
+(10, 'Зайцев Бенедикт Макарович', '+7(999)907-40-86'),
+(11, 'Афанасьев Артем Романович', '+7(999)173-00-09'),
+(12, 'Гаврилова Изабелла Николаевна', '+7(999)192-27-17'),
+(13, 'Воронов Варлаам Мартынович', '+7(999)540-24-25'),
+(14, 'Фокина Евгения Леонидовна', '+7(999)338-31-45'),
+(15, 'Мясников Любомир Денисович', '+7(999)283-39-38');
+
+INSERT INTO worker (worker_id, worker_name, worker_pos, worker_years_at_work) VALUES 
+(01, 'Колобова Элина Артемовна', 'Кассир', 3),
+(02, 'Романова Видана Наумовна', 'Кассир', 1),
+(03, 'Быкова Селена Никитевна', 'Кассир', 0),
+(04, 'Якушева Белла Иринеевна', 'Кассир', 12),
+(05, 'Скиба Артур Романович', 'Кассир', 7),
+(06, 'Капустина Нила Улебовна', 'Главный кассир', 7),
+(07, 'Ефремова Юфеза Валентиновна', 'Главный кассир', 4),
+(08, 'Савельева София Григорьевна', 'Главный кассир', 4),
+(09, 'Зимин Варлаам Якунович', 'Кассир', 5),
+(10, 'Третьяков Игорь Мэлорович', 'Кассир', 6),
+(11, 'Фадеев Феликс Даниилович', 'Главный кассир', 1),
+(12, 'Александров Исаак Агафонович', 'Кассир', 10),
+(13, 'Королёв Ибрагил Игнатьевич', 'Кассир', 9),
+(14, 'Шарапов Гавриил Дмитрьевич', 'Кассир', 8),
+(15, 'Павлов Натан Георгьевич', 'Кассир', 3);
+
+INSERT INTO provider_ (provider_id, provider_name, provider_address, provider_contacts) VALUES 
+(01, 'LG', '349 Christiansen Bypass Apt. 922 Bahringerland, NY 49646-1300', '404-375-6664, LG@gmail.com'),
+(02, 'Apple', '84509 Dietrich Heights Suite 812 Barrowsstad, MT 86842', '504-526-0165, Apple@gmail.com'),
+(03, 'Google', '811 Rowland Overpass Suite 288 Skilestown, OR 66031', '217-893-4959, Google@gmail.com'),
+(04, 'Samsung', '12152 Kiehn Mission Suite 149 Walterfurt, CT 14472', '325-928-7238, Samsung@gmail.com'),
+(05, 'ZTE', '811 Rowland Overpass Suite 288 Skilestown, OR 66031', '227-893-4959, ZTE@gmail.com'),
+(06, 'Honor', '990 Bridgette Village Apt. 950 Kossberg, NV 07170-0533', '808-653-0033, Honor@gmail.com'),
+(07, 'Huawei', '588 Megane Fords Apt. 470 Lake Terrill, NE 62245-7019', '720-635-2749, Huawei@gmail.com'),
+(08, 'Xiaomi', '19417 Mohammed Lodge Suite 803 Dietrichfort, RI 40892-7277', '786-930-3097, Xiaomi@gmail.com'),
+(09, 'Vivo', '6594 Cielo Unions Stokesfort, PA 69584', '202-279-7158, Vivo@gmail.com'),
+(10, 'Oppo', '1224 Schuster Plains Suite 694 Cassinstad, WV 80136-4022', '585-588-6415, Oppo@gmail.com'),
+(11, 'Nvidia', '8949 Clark Knolls West Thad, IL 16626-8737', '920-687-1914, Nvidia@gmail.com'),
+(12, 'Amazon', '36596 Andy Street Edmundfort, VA 88662', '530-543-5925, Amazon@gmail.com'),
+(13, 'Sony', '4323 Bruen Square Suite 817 Spencerstad, AZ 18788-1087', '781-985-1898, Sony@gmail.com'),
+(14, 'Nokia', '60683 Spencer Roads Dylanburgh, CT 25298', '208-644-5865, Nokia@gmail.com'),
+(15, 'Lenovo', '191 Orlo Locks North Matteo, NY 53454-4441', '702-476-4921, Lenovo@gmail.com');
+
+INSERT INTO delivery (delivery_id, delivery_date, delivery_comment) VALUES 
+(01, '2021-01-11 21:20:39', 'Поставка техники LG'),
+(02, '2021-02-12 14:25:36', 'Поставка техники Apple'),
+(03, '2021-02-05 00:00:06', 'Поставка техники Google'),
+(04, '2021-03-06 21:48:46', 'Поставка техники Samsung'),
+(05, '2021-05-08 14:16:12', 'Поставка техники ZTE'),
+(06, '2021-06-10 20:05:06', 'Поставка техники Honor'),
+(07, '2021-06-04 00:56:49', 'Поставка техники Huawei'),
+(08, '2021-07-03 06:50:40', 'Поставка техники Xiaomi'),
+(09, '2021-07-06 23:52:58', 'Поставка техники Vivo'),
+(10, '2021-08-09 14:19:10', 'Поставка техники Oppo'),
+(11, '2021-09-10 05:17:27', 'Поставка техники Nvidia'),
+(12, '2021-09-10 23:47:43', 'Поставка техники Amazon'),
+(13, '2021-09-08 15:48:36', 'Поставка техники Sony'),
+(14, '2021-11-08 11:45:44', 'Поставка техники Nokia'),
+(15, '2021-12-09 10:37:09', 'Поставка техники Lenovo');
+
+INSERT INTO product (product_id, product_name, product_comment, product_price) VALUES 
+(01, 'Телевизор', 'диагональ (точно) 31.5 "', 99.00),
+(02, 'MAC', 'Проц:Apple, M1, 3.2 ГГц', 100.00),
+(03, 'Pixel 6', 'Экран:6.71 ", 3120x1440 (19.5:9), 120 Гц, 513 ppi', 150.00),
+(04, 'Samsung S21', 'Экран:6.2 ", 2400x1080 (20:9), 120 Гц, 421 ppi', 199099),
+(05, 'ZTE HZ', 'Экран:5.45 ", 1440х720 (18:9), 295 ppi', 200.00),
+(06, 'Honor 20 pro', 'Экран:6.26 ", 2340x1080 (19.5:9), 412 ppi', 222.22),
+(07, 'Huawei P50 PRO', 'Экран:6.6 ", 2700x1228, 120 Гц, 458 ppi', 300.00),
+(08, 'Xiaomi Note 10', 'Экран:6.67 ", 2400x1080 (20:9), 120 Гц, 395 ppi', 999.99),
+(09, 'Vivo X70', 'Экран:6.56 ", изогнутый, 2376x1080, 120 Гц, 398 ppi', 1010.10),
+(10, 'Oppo 9 PRO', 'Экран:6.4 ", 2400x1080 (20:9), 90 Гц, 411 ppi', 5000.49),
+(11, 'Nvidia GTX 3080 SUPER', 'Объем памяти:	10 ГБ', 9999.99),
+(12, 'Amazon электронная книга', 'Дисплей:6 ", 800x600 пикс', 10000.00),
+(13, 'Sony XPERIA Z3', 'Экран:5.2 ", 1920x1080 (16:9), 424 ppi', 12341.12),
+(14, 'Nokia 3310', 'Экран:2.4 ", 320x240, 167 ppi', 54221.12),
+(15, 'Lenovo IdeaPad', 'Дисплей:14 ", 1920x1080 (16:9)', 69999.99);
+
+
+INSERT INTO order_ (order_id, order_date) VALUES 
+(01, '2021-02-10 16:31:37'),
+(02, '2021-02-04 18:54:16'),
+(03, '2021-03-03 21:47:33'),
+(04, '2021-03-04 21:32:17'),
+(05, '2021-03-10 17:50:49'),
+(06, '2021-05-12 15:01:17'),
+(07, '2021-06-11 21:54:09'),
+(08, '2021-06-08 14:39:55'),
+(09, '2021-09-08 16:55:30'),
+(10, '2021-09-04 18:10:16'),
+(11, '2021-09-07 13:23:52'),
+(12, '2021-09-10 18:32:22'),
+(13, '2021-10-04 11:03:52'),
+(14, '2021-10-06 17:05:59'),
+(15, '2021-12-10 21:53:36');
+
+
+
+SELECT product_name, product_comment FROM product;
+
+SELECT worker_name, worker_pos FROM worker WHERE worker_pos = 'Кассир';
+
+SELECT ft.product_name, d.provider_name, d.provider_contacts, f.delivery_date, ft.product_price AS product_price_in_RUB
+FROM provider_ d LEFT OUTER JOIN delivery f
+ON d.provider_id = f.delivery_id
+LEFT OUTER JOIN product ft
+ON f.delivery_id = ft.product_id
+ORDER BY ft.product_price DESC;
+
+SELECT COUNT(worker_pos) AS count, worker_pos FROM worker GROUP BY worker_pos;
+
+SELECT * FROM worker ORDER BY worker_pos; 
+
+SELECT c.client_name, w.worker_name, p.product_name, o.order_date, p.product_price AS product_price_in_RUB
+FROM order_ o 
+LEFT OUTER JOIN client c
+ON o.order_id = c.client_id
+LEFT OUTER JOIN worker w
+ON o.order_id = w.worker_id
+LEFT OUTER JOIN product p
+ON o.order_id = p.product_id; 
+
+SELECT product_id, product_name, product_comment, product_price FROM product WHERE product_price >= 10000;
+
+
+
+CREATE VIEW delivery_view AS
+SELECT ft.product_name, d.provider_name, d.provider_contacts, f.delivery_date, ft.product_price AS product_price_in_RUB
+FROM provider_ d LEFT OUTER JOIN delivery f
+ON d.provider_id = f.delivery_id
+LEFT OUTER JOIN product ft
+ON f.delivery_id = ft.product_id;
+
+SELECT * FROM delivery_view;
+
+
+CREATE VIEW info_about_order AS
+SELECT c.client_name, w.worker_name, p.product_name, o.order_date, p.product_price AS product_price_in_RUB
+FROM order_ o 
+LEFT OUTER JOIN client c
+ON o.order_id = c.client_id
+LEFT OUTER JOIN worker w
+ON o.order_id = w.worker_id
+LEFT OUTER JOIN product p
+ON o.order_id = p.product_id; 
+
+SELECT * FROM info_about_order;
+
+
+CREATE VIEW which_possition AS 
+SELECT worker_pos FROM worker GROUP BY worker_pos;
+
+SELECT * FROM which_possition;
+
+
+
+CREATE UNIQUE INDEX ind_unique_name_provider ON provider_ (provider_name);
+
+CREATE UNIQUE INDEX ind_unique_name_product ON product (product_name);
+
+CREATE UNIQUE INDEX ind_unique_provider_contacts ON provider_ (provider_contacts);
+
+
+
+CREATE PROCEDURE price_product_raise_NDS (@percent int = 2) 
+AS
+BEGIN
+UPDATE product SET product_price = product_price * product_price * @percent / 100 
+END
+
+EXECUTE price_product_raise_NDS;
+
+
+CREATE PROCEDURE plus_year_to_worker (@year int = 1)
+AS
+BEGIN
+UPDATE worker SET worker_years_at_work = worker_years_at_work + 1
+END
+
+EXECUTE plus_year_to_worker;
+
+
+
+

@@ -1,0 +1,77 @@
+[
+    {
+        "number_room": "01", 
+        "type_room": "single",
+        "number_berths": 1
+    },
+    {
+        "number_room": "02", 
+        "type_room": "standart",
+        "number_berths": 1
+    },
+    {
+        "number_room": "03", 
+        "type_room": "double",
+        "number_berths": 2
+    },
+    {
+        "number_room": "04", 
+        "type_room": "triple",
+        "number_berths": 3
+    },
+    {
+        "number_room": "05", 
+        "type_room": "lux",
+        "number_berths": 1
+    },
+    {
+        "number_room": "06", 
+        "type_room": "double",
+        "number_berths": 2
+    },
+    {
+        "number_room": "07", 
+        "type_room": "triple",
+        "number_berths": 1
+    },
+    {
+        "number_room": "08", 
+        "type_room": "single",
+        "number_berths": 1
+    },
+    {
+        "number_room": "09", 
+        "type_room": "triple",
+        "number_berths": 3
+    },
+    {
+        "number_room": "10", 
+        "type_room": "lux",
+        "number_berths": 1
+    },
+    {
+        "number_room": "11", 
+        "type_room": "lux",
+        "number_berths": 1
+    },
+    {
+        "number_room": "12", 
+        "type_room": "single",
+        "number_berths": 1
+    },
+    {
+        "number_room": "13", 
+        "type_room": "child",
+        "number_berths": 1
+    },
+    {
+        "number_room": "14", 
+        "type_room": "double",
+        "number_berths": 2
+    },
+    {
+        "number_room": "15", 
+        "type_room": "triple",
+        "number_berths": 3
+    }
+]

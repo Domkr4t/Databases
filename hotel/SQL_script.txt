@@ -1,0 +1,255 @@
+USE hotel1;
+
+CREATE TABLE Room 
+(	number_room int, 
+	type_room varchar(10) NOT NULL, 
+	number_berths int NOT NULL,
+	CONSTRAINT PK_Room PRIMARY KEY (number_room)
+);
+
+CREATE TABLE Worker 
+(	id_worker int, 
+	name_worker varchar(60) NOT NULL, 
+	position_worker varchar(60) NOT NULL,
+	experience_worker int NOT NULL,
+	number_room int,
+	CONSTRAINT PK_worker PRIMARY KEY (id_worker),
+	CONSTRAINT FK_Room_for_worker  
+		FOREIGN KEY (number_room) 
+		REFERENCES Room (number_room)
+);
+
+CREATE TABLE Client
+(	id_client int, 
+	name_client varchar(60) NOT NULL, 
+	passport_client varchar(15) NOT NULL, 
+	telephone_client varchar(20) NOT NULL, 
+	number_room int,
+	CONSTRAINT PK_Client PRIMARY KEY (id_client),
+	CONSTRAINT FK_Room_for_client  
+		FOREIGN KEY (number_room) 
+		REFERENCES Room (number_room)
+);
+
+CREATE TABLE PriceRoom 
+(	id_priceroom int, 
+	number_room int, 
+	price_room int NOT NULL,
+	CONSTRAINT PK_PriceRoom PRIMARY KEY (id_priceroom),
+	CONSTRAINT FK_Room_for_price  
+		FOREIGN KEY (number_room) 
+		REFERENCES Room (number_room)
+);
+
+CREATE TABLE Reservation
+(	id_reservation int, 
+	date_reservation date NOT NULL, 
+	number_room int, 
+	id_client int,
+	CONSTRAINT PK_Reservation PRIMARY KEY (id_reservation),
+	CONSTRAINT FK_Client_for_reservation 
+		FOREIGN KEY (id_client) 
+		REFERENCES Client (id_client),
+	CONSTRAINT FK_Room_for_reservation 
+		FOREIGN KEY (number_room) 
+		REFERENCES Room (number_room)
+);
+
+CREATE TABLE Accommodation
+(	id_accommodation int, 
+	date_accommodation date NOT NULL, 
+	number_room int, 
+	id_client int,
+	CONSTRAINT PK_Accommodation PRIMARY KEY (id_accommodation),
+	CONSTRAINT FK_Client_for_Accommodation 
+		FOREIGN KEY (id_client) 
+		REFERENCES Client (id_client),
+	CONSTRAINT FK_Room_for_accommodation 
+		FOREIGN KEY(number_room)
+		REFERENCES Room(number_room)
+);
+
+
+INSERT INTO Client (id_client, name_client ,  telephone_client, passport_client) VALUES
+(01, 'Панкратов Илья Алексеевич', '+7(926)092-97-30', '46 01 133293'),
+(02, 'Худшев Худший Худшеевич', '+7(999)703-11-69', '46 02 651187'),
+(03, 'Алешкина Ольга Вячеславовна', '+7(904)36-45-98','46 03 471506'),
+(04, 'Иванов Иван Иванович', '+7(999)554-15-32','46 04 992093'),
+(05, 'Скиба Артур Романович', '+7(999)123-00-09','46 05 841668'),
+(06, 'Крутой Крутик Крутевич', '+7(999)498-55-90','46 06 342462'),
+(07, 'Игнатьев Кирилл Тимурович', '+7(999)031-28-26','46 07 390301'),
+(08, 'Князева Магда Богдановна', '+7(999)510-60-89','46 08 990493'),
+(09, 'Прохорова Мартина Авксентьевна', '+7(999)336-97-91','46 09 918525'),
+(10, 'Зайцев Бенедикт Макарович', '+7(999)907-40-86','46 10 502288'),
+(11, 'Афанасьев Артем Романович', '+7(999)173-00-09','46 11 835171'),
+(12, 'Гаврилова Изабелла Николаевна', '+7(999)192-27-17','46 12 124838'),
+(13, 'Воронов Варлаам Мартынович', '+7(999)540-24-25','46 13 355041'),
+(14, 'Фокина Евгения Леонидовна', '+7(999)338-31-45','46 14 505111'),
+(15, 'Мясников Любомир Денисович', '+7(999)283-39-38','46 15 312973');
+
+INSERT INTO PriceRoom (id_priceroom, price_room) VALUES 
+(01, 12300),
+(02, 1300),
+(03, 9300),
+(04, 13300),
+(05, 15300),
+(06, 9300),
+(07, 12300),
+(08, 12300),
+(09, 13300),
+(10, 12300),
+(11, 15300),
+(12, 12300),
+(13, 20300),
+(14, 9300),
+(15, 13300);
+
+INSERT INTO Worker (id_worker, name_worker, position_worker, experience_worker) VALUES 
+(01, 'Егоров Зиновий Дамирович', 'Повар', 3),
+(02, 'Хохлов Иосиф Георгьевич', 'Повар', 1),
+(03, 'Шилова Лайма Егоровна', 'Горничная', 0),
+(04, 'Орлов Артур Валерьевич', 'Менеджер отеля', 12),
+(05, 'Дмитриев Рудольф Николаевич', 'Повар', 7),
+(06, 'Капустина Нила Улебовна', 'Горничная', 7),
+(07, 'Ефремова Юфеза Валентиновна', 'Портье', 4),
+(08, 'Савельева София Григорьевна', 'Горничная', 4),
+(09, 'Дмитриев Рудольф Николаевич', 'Администратор', 5),
+(10, 'Панфилова Мирра Иосифовна', 'Повар', 6),
+(11, 'Кулаков Флор Парфеньевич', 'Портье', 1),
+(12, 'Кузьмина Яна Вадимовна', 'Заместитель менеджера отеля', 10),
+(13, 'Королёв Ибрагил Игнатьевич', 'Консьерж', 9),
+(14, 'Ширяева Диана Станиславовна', 'Консьерж', 8),
+(15, 'Кононова Вероника Фроловна', 'Консьерж', 3);
+
+INSERT INTO Reservation (id_reservation, date_reservation) VALUES 
+(01, '2021-02-10'),
+(02, '2021-02-04'),
+(03, '2021-03-03'),
+(04, '2021-03-04'),
+(05, '2021-03-10'),
+(06, '2021-05-12'),
+(07, '2021-06-11'),
+(08, '2021-06-08'),
+(09, '2021-09-08'),
+(10, '2021-09-04'),
+(11, '2021-09-07'),
+(12, '2021-09-10'),
+(13, '2021-10-04'),
+(14, '2021-10-06'),
+(15, '2021-12-10');
+
+
+INSERT INTO Accommodation (id_accommodation, date_accommodation) VALUES 
+(01, '2021-02-10'),
+(02, '2021-02-04'),
+(03, '2021-03-03'),
+(04, '2021-03-04'),
+(05, '2021-03-10'),
+(06, '2021-05-12'),
+(07, '2021-06-11'),
+(08, '2021-06-08'),
+(09, '2021-09-08'),
+(10, '2021-09-04'),
+(11, '2021-09-07'),
+(12, '2021-09-10'),
+(13, '2021-10-04'),
+(14, '2021-10-06'),
+(15, '2021-12-10');
+INSERT INTO Room (number_room, type_room , number_berths ) VALUES
+(01, 'single', 1),
+(02,  'standart', 1),
+(03,  'double', 2),
+(04,  'triple', 3),
+(05, 'lux', 1),
+(06, 'double', 2),
+(07, 'triple', 1),
+(08,  'single', 1),
+(09,  'triple', 3),
+(10,  'lux', 1),
+(11, 'lux', 1),
+(12,  'single', 1),
+(13,  'child ', 1),
+(14,  'double', 2),
+(15,  'triple ', 3);
+
+--------------------Информация о клиентах------------------------------
+SELECT name_client , telephone_client, passport_client FROM Client;
+
+-------Информация о комнат в которых одно спальное место------------------
+SELECT type_room, number_room FROM Room WHERE number_berths = 1;
+
+--------------------Прейскурант комнат------------------------------
+SELECT r.number_room, r.type_room, r.number_berths, pr.price_room
+FROM Room r LEFT OUTER JOIN Priceroom pr
+ON r.number_room = pr.id_priceroom;
+
+--------------------Информация о резервации------------------------------
+SELECT id_reservation, r.date_reservation, c.name_client, ro.number_room
+FROM Reservation r LEFT OUTER JOIN Client c
+ON r.id_reservation = c.id_client
+LEFT OUTER JOIN Room ro
+ON r.id_reservation = ro.number_room;
+
+--------------------Информация о заселении------------------------------
+SELECT id_accommodation, date_accommodation, c.name_client, ro.number_room
+FROM Accommodation r LEFT OUTER JOIN Client c
+ON r.id_accommodation = c.id_client
+LEFT OUTER JOIN Room ro
+ON r.id_accommodation = ro.number_room;
+
+--------------------Количество комнат каждого типа------------------------------
+SELECT COUNT(type_room) AS count, type_room FROM Room GROUP BY type_room;
+
+--------------------Сортировка работников по должности------------------------------
+SELECT COUNT(position_worker) AS count, position_worker FROM worker GROUP BY position_worker;
+
+
+CREATE VIEW info_about_reservation AS
+SELECT id_reservation, r.date_reservation, c.name_client, ro.number_room
+FROM Reservation r LEFT OUTER JOIN Client c
+ON r.id_reservation = c.id_client
+LEFT OUTER JOIN Room ro
+ON r.id_reservation = ro.number_room;
+SELECT * FROM info_about_reservation;
+
+
+CREATE VIEW info_about_accommodation AS
+SELECT id_accommodation, date_accommodation, c.name_client, ro.number_room
+FROM Accommodation r LEFT OUTER JOIN Client c
+ON r.id_accommodation = c.id_client
+LEFT OUTER JOIN Room ro
+ON r.id_accommodation = ro.number_room;
+
+SELECT * FROM info_about_accommodation;
+
+
+CREATE VIEW count_of_type_room AS 
+SELECT COUNT(type_room) AS count, type_room FROM Room GROUP BY type_room;
+
+SELECT * FROM count_of_type_room;
+
+
+CREATE UNIQUE INDEX ind_unique_number_room ON Room (number_room);
+
+CREATE UNIQUE INDEX ind_unique_telephone_client ON Client (telephone_client);
+
+CREATE UNIQUE INDEX ind_unique_passport_client ON Client (passport_client);
+
+
+CREATE PROCEDURE price_raise (@percent float = 10) 
+AS
+BEGIN
+UPDATE PriceRoom SET price_room = price_room * (1 + (@percent / 100)) 
+END
+
+EXECUTE price_raise;
+
+
+CREATE PROCEDURE plus_experience_to_worker (@year int = 1)
+AS
+BEGIN
+UPDATE worker SET experience_worker = experience_worker + @year
+END
+
+EXECUTE plus_eperienc_to_worker;
+

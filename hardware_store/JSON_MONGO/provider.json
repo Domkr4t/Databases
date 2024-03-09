@@ -1,0 +1,92 @@
+[
+  {
+    "provider_id": 1,
+    "provider_name": "LG",
+    "provider_address": "349 Christiansen Bypass Apt. 922 Bahringerland, NY 49646-1300",
+    "provider_contacts": "404-375-6664, LG@gmail.com"
+  },
+  {
+    "provider_id": 2,
+    "provider_name": "Apple",
+    "provider_address": "84509 Dietrich Heights Suite 812 Barrowsstad, MT 86842",
+    "provider_contacts": "504-526-0165, Apple@gmail.com"
+  },
+  {
+    "provider_id": 3,
+    "provider_name": "Google",
+    "provider_address": "811 Rowland Overpass Suite 288 Skilestown, OR 66031",
+    "provider_contacts": "217-893-4959, Google@gmail.com"
+  },
+  {
+    "provider_id": 4,
+    "provider_name": "Samsung",
+    "provider_address": "12152 Kiehn Mission Suite 149 Walterfurt, CT 14472",
+    "provider_contacts": "325-928-7238, Samsung@gmail.com"
+  },
+  {
+    "provider_id": 5,
+    "provider_name": "ZTE",
+    "provider_address": "811 Rowland Overpass Suite 288 Skilestown, OR 66031",
+    "provider_contacts": "227-893-4959, ZTE@gmail.com"
+  },
+  {
+    "provider_id": 6,
+    "provider_name": "Honor",
+    "provider_address": "990 Bridgette Village Apt. 950 Kossberg, NV 07170-0533",
+    "provider_contacts": "808-653-0033, Honor@gmail.com"
+  },
+  {
+    "provider_id": 7,
+    "provider_name": "Huawei",
+    "provider_address": "588 Megane Fords Apt. 470 Lake Terrill, NE 62245-7019",
+    "provider_contacts": "720-635-2749, Huawei@gmail.com"
+  },
+  {
+    "provider_id": 8,
+    "provider_name": "Xiaomi",
+    "provider_address": "19417 Mohammed Lodge Suite 803 Dietrichfort, RI 40892-7277",
+    "provider_contacts": "786-930-3097, Xiaomi@gmail.com"
+  },
+  {
+    "provider_id": 9,
+    "provider_name": "Vivo",
+    "provider_address": "6594 Cielo Unions Stokesfort, PA 69584",
+    "provider_contacts": "202-279-7158, Vivo@gmail.com"
+  },
+  {
+    "provider_id": 10,
+    "provider_name": "Oppo",
+    "provider_address": "1224 Schuster Plains Suite 694 Cassinstad, WV 80136-4022",
+    "provider_contacts": "585-588-6415, Oppo@gmail.com"
+  },
+  {
+    "provider_id": 11,
+    "provider_name": "Nvidia",
+    "provider_address": "8949 Clark Knolls West Thad, IL 16626-8737",
+    "provider_contacts": "920-687-1914, Nvidia@gmail.com"
+  },
+  {
+    "provider_id": 12,
+    "provider_name": "Amazon",
+    "provider_address": "36596 Andy Street Edmundfort, VA 88662",
+    "provider_contacts": "530-543-5925, Amazon@gmail.com"
+  },
+  {
+    "provider_id": 13,
+    "provider_name": "Sony",
+    "provider_address": "4323 Bruen Square Suite 817 Spencerstad, AZ 18788-1087",
+    "provider_contacts": "781-985-1898, Sony@gmail.com"
+  },
+  {
+    "provider_id": 14,
+    "provider_name": "Nokia",
+    "provider_address": "60683 Spencer Roads Dylanburgh, CT 25298",
+    "provider_contacts": "208-644-5865, Nokia@gmail.com"
+  },
+  {
+    "provider_id": 15,
+    "provider_name": "Lenovo",
+    "provider_address": "191 Orlo Locks North Matteo, NY 53454-4441",
+    "provider_contacts": "702-476-4921, Lenovo@gmail.com"
+  }
+]
