@@ -1,0 +1,69 @@
+SELECT r.id AS Номер_рейса, r.departure_datetime AS Время_отправления, r.arrival_datetime AS Время_прибытия, c1.name AS Город_отправления, c2.name AS Город_прибытия
+FROM race r
+JOIN root ro ON r.root_id = ro.id
+JOIN city c1 ON ro.departure_point = c1.id
+JOIN city c2 ON ro.arrival_point = c2.id
+WHERE c1.name = 'Санкт-Петербург' AND c2.name = 'Москва';
+
+SELECT c.name AS Промежуточная_станция, ist.departure_datetime AS Время_прибытия, ist.arrival_datetime AS Время_отправления
+FROM intermediate_stations ist
+JOIN city c ON ist.city_id = c.id
+JOIN root ro ON ist.root_id = ro.id
+JOIN race r ON ro.id = r.root_id
+WHERE r.id = '1' AND r.departure_datetime = '2022-11-22 01:03:51'
+ORDER BY ist.departure_datetime;
+
+SELECT DISTINCT r.id AS Номер_поезда, cro.name
+FROM race r
+JOIN root ro ON r.root_id = ro.id
+JOIN intermediate_stations ist ON ro.id = ist.root_id
+JOIN city c ON ist.city_id = c.id
+JOIN city cro ON ro.departure_point  = cro.id
+WHERE r.departure_datetime = '2023-05-11 17:21:30' AND c.name = 'Львов';
+
+SELECT DISTINCT t.type_of_van AS Тип_вагона
+FROM race r
+JOIN ticket t ON t.race_id = r.id
+WHERE r.id = 1 AND r.departure_datetime = '2022-11-22 01:03:51'
+ORDER BY t.type_of_van;
+
+SELECT COUNT(status) AS Количество_свободных_мест
+FROM race r
+JOIN ticket t ON t.race_id = r.id
+WHERE r.id = 1 AND r.departure_datetime = '2022-11-22 01:03:51';
+
+SELECT ROUND(AVG(cost), 2) AS Средняя_стоимость
+FROM race r
+JOIN ticket t ON t.race_id = r.id
+JOIN root ro ON r.root_id = ro.id
+JOIN city c1 ON ro.departure_point = c1.id
+JOIN city c2 ON ro.arrival_point = c2.id
+WHERE c1.name = 'Санкт-Петербург' AND c2.name = 'Москва' AND t.type_of_van = 2;
+
+SELECT MAX(cost) AS Максимальная_стоимость
+FROM race r
+JOIN ticket t ON t.race_id = r.id
+WHERE r.departure_datetime = '2022-11-22 01:03:51';
+
+SELECT COUNT(status) AS Количество_свободных_мест
+FROM race r
+JOIN ticket t ON t.race_id = r.id
+WHERE r.id = 1 AND r.departure_datetime = '2022-11-22 01:03:51' AND type_of_van = 1 AND t.site % 2 = 1;
+
+SELECT MIN(cost) AS Минимальная_стоимость, r.id AS Номер_поезда, crod.name AS Город_отправления, croa.name AS Город_прибытия
+FROM race r
+JOIN root ro ON r.root_id = ro.id
+JOIN intermediate_stations ist ON ro.id = ist.root_id
+JOIN city c ON ist.city_id = c.id
+JOIN ticket t ON t.race_id = r.id
+JOIN city crod ON ro.departure_point  = crod.id
+JOIN city croa ON ro.arrival_point  = croa.id
+WHERE r.departure_datetime = '2023-05-11 17:21:30' AND c.name = 'Львов' AND type_of_van = 2
+GROUP BY r.id, crod.name, croa.name; 
+
+SELECT DISTINCT r.id AS Номер_поезда, r.departure_datetime AS Время_отправления
+FROM race r
+JOIN root ro ON r.root_id = ro.id
+JOIN intermediate_stations ist ON ro.id = ist.root_id
+JOIN city c ON ist.city_id = c.id
+WHERE c.name = 'Львов' AND ist.departure_datetime BETWEEN '2023-09-13 00:00:00' AND '2023-12-13 00:00:00';
