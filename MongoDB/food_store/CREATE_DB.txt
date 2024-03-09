@@ -1,0 +1,20 @@
+-- Создаем базу данных "Velo"
+use Velo
+
+-- Создаем коллекцию «Категория»
+db.createCollection("category") 
+
+-- Создаем коллекцию «Работник»
+db.createCollection("employee") 
+
+-- Создаем коллекцию «Продукт»
+db.createCollection("product") 
+
+-- Создаем коллекцию «Цена продукта»
+db.createCollection("product_price") 
+
+-- Создаем коллекцию «Магазин»
+db.createCollection("store") 
+
+-- Создаем коллекцию «Адрес магазина»
+db.createCollection("store_adress") 

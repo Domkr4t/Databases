@@ -1,0 +1,466 @@
+-----Заполнение таблицы category--------
+db.category.insertMany(
+[
+    {
+        "category_id": 1,
+        "category_name": "Сыр"    
+    },
+    {
+        "category_id": 2,
+        "category_name": "Молочное и яйца"    
+    },
+    {
+        "category_id": 3,
+        "category_name": "Йогурты и десерты"    
+    },
+    {
+        "category_id": 4,
+        "category_name": "Овощи"    
+    },
+    {
+        "category_id": 5,
+        "category_name": "Фрукты и ягоды"    
+    },
+    {
+        "category_id": 6,
+        "category_name": "Экзотика"    
+    },
+    {
+        "category_id": 7,
+        "category_name": "Мясо и птица"    
+    },
+    {
+        "category_id": 8,
+        "category_name": "Колбаса и сосиски"    
+    },
+    {
+        "category_id": 9,
+        "category_name": "Рыба и дары моря"    
+    },
+    {
+        "category_id": 10,
+        "category_name": "Вода"    
+    },
+    {
+        "category_id": 11,
+        "category_name": "Соки и морсы"    
+    },
+    {
+        "category_id": 12,
+        "category_name": "Газировка и лимонады"    
+    },
+    {
+        "category_id": 13,
+        "category_name": "Холодный чай и квас"    
+    },
+    {
+        "category_id": 14,
+        "category_name": "Макароны"    
+    },
+    {
+        "category_id": 15,
+        "category_name": "Крупы"    
+    }
+])
+
+
+
+-----Заполнение таблицы employee--------
+db.employee.insertMany(
+[
+    {
+        "employee_id": 1,
+        "employee_name": "Павлов Владислав Даниилович",
+        "employee_rank": "Генеральный Директор",
+        "phone": "89150641507"
+    },
+    {
+        "employee_id": 2,
+        "employee_name": "Филатов Дмитрий Миронович",
+        "employee_rank": "Директор по закупкам",
+        "phone": "89123412431"
+    },
+    {
+        "employee_id": 3,
+        "employee_name": "Макарова Вероника Егоровна",
+        "employee_rank": "Продавец",
+        "phone": "89312414212"
+    },
+    {
+        "employee_id": 4,
+        "employee_name": "Казанцев Савва Львович",
+        "employee_rank": "Курьер",
+        "phone": "83124253742"
+    },
+    {
+        "employee_id": 5,
+        "employee_name": "Романова Анна Львовна",
+        "employee_rank": "Курьер",
+        "phone": "89457684920"
+    },
+    {
+        "employee_id": 6,
+        "employee_name": "Савельева Алиса Ивановна",
+        "employee_rank": "Курьер",
+        "phone": "89166522502"
+    },
+    {
+        "employee_id": 7,
+        "employee_name": "Денисова Варвара Степановна",
+        "employee_rank": "Продавец",
+        "phone": "89166522503"
+    },
+    {
+        "employee_id": 8,
+        "employee_name": "Логинова Ксения Макаровна",
+        "employee_rank": "Продавец",
+        "phone": "89166522504"
+    },
+    {
+        "employee_id": 9,
+        "employee_name": "Харитонова Ева Данииловна",
+        "employee_rank": "Продавец",
+        "phone": "89166522505"
+    },
+    {
+        "employee_id": 10,
+        "employee_name": "Морозова Мелания Дмитриевна",
+        "employee_rank": "Координатор",
+        "phone": "89166522506"
+    },
+    {
+        "employee_id": 11,
+        "employee_name": "Корнеева Алиса Романовна",
+        "employee_rank": "Координатор",
+        "phone": "89166522508"
+    },
+    {
+        "employee_id": 12,
+        "employee_name": "Тихомиров Дмитрий Ильич",
+        "employee_rank": "Администратор",
+        "phone": "89166522509"
+    },
+    {
+        "employee_id": 13,
+        "employee_name": "Волков Глеб Егорович",
+        "employee_rank": "Заместитель директора",
+        "phone": "89166522510"
+    },
+    {
+        "employee_id": 14,
+        "employee_name": "Сорокин Дмитрий Даниилович",
+        "employee_rank": "Контроль качества",
+        "phone": "89166522511"
+    },
+    {
+        "employee_id": 15,
+        "employee_name": "Сафонов Даниил Дамирович",
+        "employee_rank": "Колл-центр",
+        "phone": "89166522513"
+    }
+])
+
+
+
+-----Заполнение таблицы product_price--------
+db.product_price.insertMany(
+[
+    {
+        "price_id": 1,
+        "product_id": 1,
+        "price": 268
+    },
+    {
+        "price_id": 2,
+        "product_id": 2,
+        "price": 111
+    },
+    {
+        "price_id": 3,
+        "product_id": 3,
+        "price": 475
+    },
+    {
+        "price_id": 4,
+        "product_id": 4,
+        "price": 10
+    },
+    {
+        "price_id": 5,
+        "product_id": 5,
+        "price": 500
+    },
+    {
+        "price_id": 6,
+        "product_id": 6,
+        "price": 68
+    },
+    {
+        "price_id": 7,
+        "product_id": 7,
+        "price": 78
+    },
+    {
+        "price_id": 8,
+        "product_id": 8,
+        "price": 105
+    },
+    {
+        "price_id": 9,
+        "product_id": 9,
+        "price": 168
+    },
+    {
+        "price_id": 10,
+        "product_id": 10,
+        "price": 220
+    },
+    {
+        "price_id": 11,
+        "product_id": 11,
+        "price": 299
+    },
+    {
+        "price_id": 12,
+        "product_id": 12,
+        "price": 305
+    },
+    {
+        "price_id": 13,
+        "product_id": 13,
+        "price": 1005
+    },
+    {
+        "price_id": 14,
+        "product_id": 14,
+        "price": 1684
+    },
+    {
+        "price_id": 15,
+        "product_id": 15,
+        "price": 80
+    }
+])
+
+
+-----Заполнение таблицы product--------
+db.product.insertMany(
+[
+    {
+        "product_id": 1,
+        "product_name": "Сыр российский",
+        "category_name": 2,
+        "product_life_time": 15,
+        "product_wieght": 300
+    },
+    {
+        "product_id": 2,
+        "product_name": "Молоко домашнее",
+        "category_name": 2,
+        "product_life_time": 2,
+        "product_wieght": 1000
+    },
+    {
+        "product_id": 3,
+        "product_name": "Растишка",
+        "category_name": 3,
+        "product_life_time": 4,
+        "product_wieght": 150
+    },
+    {
+        "product_id": 4,
+        "product_name": "Кабачок",
+        "category_name": 4,
+        "product_life_time": 2,
+        "product_wieght": 1600
+    },
+    {
+        "product_id": 5,
+        "product_name": "Яблоко",
+        "category_name": 5,
+        "product_life_time": 8,
+        "product_wieght": 6800
+    },
+    {
+        "product_id": 6,
+        "product_name": "Дуриан",
+        "category_name": 6,
+        "product_life_time": 3,
+        "product_wieght": 800
+    },
+    {
+        "product_id": 7,
+        "product_name": "Курица",
+        "category_name": 7,
+        "product_life_time": 4,
+        "product_wieght": 1850
+    },
+    {
+        "product_id": 8,
+        "product_name": "Колбаса докторская",
+        "category_name": 8,
+        "product_life_time": 10,
+        "product_wieght": 2000
+    },
+    {
+        "product_id": 9,
+        "product_name": "Семга ломтиками",
+        "category_name": 9,
+        "product_life_time": 2,
+        "product_wieght": 400
+    },
+    {
+        "product_id": 10,
+        "product_name": "Пилигримм газированный",
+        "category_name": 10,
+        "product_life_time": 30,
+        "product_wieght": 1000
+    },
+    {
+        "product_id": 11,
+        "product_name": "Добрый яблочный",
+        "category_name": 11,
+        "product_life_time": 30,
+        "product_wieght": 2000
+    },
+    {
+        "product_id": 12,
+        "product_name": "Пепси",
+        "category_name": 12,
+        "product_life_time": 80,
+        "product_wieght": 2000
+    },
+    {
+        "product_id": 13,
+        "product_name": "Липтон",
+        "category_name": 13,
+        "product_life_time": 80,
+        "product_wieght": 1000
+    },
+    {
+        "product_id": 14,
+        "product_name": "Барилла",
+        "category_name": 14,
+        "product_life_time": 60,
+        "product_wieght": 400
+    },
+    {
+        "product_id": 15,
+        "product_name": "Гречка",
+        "category_name": 15,
+        "product_life_time": 120,
+        "product_wieght": 4000
+    }  
+])
+
+
+-----Заполнение таблицы store_adress--------
+db.store_adress.insertMany(
+[
+    {
+        "store_adress_id": 1,
+        "phone": "7958374598",
+        "sity_name": "Москва",
+        "store_name": "Велосипед"
+    },
+    {
+        "store_adress_id": 2,
+        "phone": "7958374598",
+        "sity_name": "Москва",
+        "store_name": "Велосипед"
+    },
+    {
+        "store_adress_id": 3,
+        "phone": "7958374598",
+        "sity_name": "Москва",
+        "store_name": "Велосипед у дома"
+    },
+    {
+        "store_adress_id": 4,
+        "phone": "7958374598",
+        "sity_name": "Москва",
+        "store_name": "Велосипед косметик"
+    },
+    {
+        "store_adress_id": 5,
+        "phone": "7958374598",
+        "sity_name": "Москва",
+        "store_name": "Велосипед авто"
+    },
+    {
+        "store_adress_id": 6,
+        "phone": "7958374598",
+        "sity_name": "Москва",
+        "store_name": "Велосипед фаст"
+    },
+    {
+        "store_adress_id": 7,
+        "phone": "7958374598",
+        "sity_name": "Воронеж",
+        "store_name": "Велосипед у дома"
+    },
+    {
+        "store_adress_id": 8,
+        "phone": "7958374598",
+        "sity_name": "Воронеж",
+        "store_name": "Велосипед"
+    },
+    {
+        "store_adress_id": 9,
+        "phone": "7958374598",
+        "sity_name": "Томск",
+        "store_name": "Велосипед"
+    },
+    {
+        "store_adress_id": 10,
+        "phone": "7958374598",
+        "sity_name": "Томск",
+        "store_name": "Велосипед у дома"
+    },
+    {
+        "store_adress_id": 11,
+        "phone": "7958374598",
+        "sity_name": "Хабаровск",
+        "store_name": "Велосипед"
+    },
+    {
+        "store_adress_id": 12,
+        "phone": "7958374598",
+        "sity_name": "Омск",
+        "store_name": "Велосипед"
+    },
+    {
+        "store_adress_id": 13,
+        "phone": "7958374598",
+        "sity_name": "Екатеринбург",
+        "store_name": "Велосипед"
+    },
+    {
+        "store_adress_id": 14,
+        "phone": "7958374598",
+        "sity_name": "Самара",
+        "store_name": "Велосипед"
+    },
+    {
+        "store_adress_id": 15,
+        "phone": "7958374598",
+        "sity_name": "Ростов-на-дону",
+        "store_name": "Велосипед"
+    }
+])
+
+
+
+-----Заполнение таблицы store--------
+db.store.insertOne(
+[
+    {
+        "store_id": 1,
+        "product_id": 1,
+        "employee_id": 6,
+        "category_id": 1,
+        "price_id": 1,
+        "store_adress_id": 1,
+        "store_name": "Перекресток фаст"
+    }
+])

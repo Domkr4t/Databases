@@ -1,0 +1,19 @@
+-- Создаем базу данных "LSP"
+use LSP
+
+-- Создаем коллекцию «Клиент»
+db.createCollection("clients")
+
+-- Создаем коллекцию «Владельцы»
+db.createCollection("owners")
+
+-- Создаем коллекцию «Апартаменты»
+db.createCollection("apartments")
+
+-- Создаем коллекцию «Под сдачу»
+db.createCollection("rents")
+
+-- Создаем коллекцию «Под продажу»
+db.createCollection("sales")
+
+

@@ -1,0 +1,43 @@
+-----Сортировка фамилий сотрудников по алфавиту-----------
+db.employee.find( {}, {_id: 0} ).sort( {"employee_name": 1} )
+
+-----Сортировка продуктов по сроку годности в порядке возрастания-----------
+db.product.find( {}, {_id: 0} ).sort( {"product_life_time": 1} )
+
+-----Полная информация о конкретном продукте-------
+db.product.findOne( {product_name: "Гречка"}, {_id:0} )
+
+-----Вывести всех продавцов----------
+db.employee.find( {employee_rank: "Продавец"}, {_id:0} )
+
+----Все магазины в Москве---------
+db.store_adress.find( {sity_name: "Москва"}, {_id:0} )
+
+----Количество магазинов в Москве------
+db.store_adress.count( {sity_name: "Москва"} )
+
+----Количество продавцов--------
+db.employee.count( {employee_rank: "Продавец"} )
+
+----Группировка работников и их количество------
+db.employee.aggregate( [ { $group : {_id: "$employee_rank" , count_of_employee: {$count: {} } } } ] )
+
+----Цена продуктов------
+db.product.aggregate( [ {
+    $lookup: {
+            from: "product_price",
+            localField: "product_id",
+            foreignField: "product_id",
+            as: "Product_price"
+        }
+}] )
+
+-----Категория продуктов-------
+db.product.aggregate( [ {
+    $lookup: {
+            from: "category",
+            localField: "product_id",
+            foreignField: "category_id",
+            as: "Product_category"
+        }
+}] )

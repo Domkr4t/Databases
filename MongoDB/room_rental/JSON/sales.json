@@ -1,0 +1,17 @@
+﻿[   
+    {"id_sl":"01","sl_data":"21.03.2019","rent_id":"02","ap_id":"NULL","ow_id":"03","cl_id":"02","sl_status":"Сдана"},
+    {"id_sl":"02","sl_data":"21.04.2021","rent_id":"03","ap_id":"NULL","ow_id":"04","cl_id":"03","sl_status":"Сдана"},
+    {"id_sl":"03","sl_data":"11.01.2020","rent_id":"01","ap_id":"NULL","ow_id":"NULL","cl_id":"NULL","sl_status":"Свободна"},
+    {"id_sl":"04","sl_data":"23.03.2019","rent_id":"04","ap_id":"NULL","ow_id":"09","cl_id":"05","sl_status":"Сдана"},
+    {"id_sl":"05","sl_data":"25.08.2019","rent_id":"05","ap_id":"NULL","ow_id":"07","cl_id":"06","sl_status":"Сдана"},
+    {"id_sl":"06","sl_data":"27.06.2019","rent_id":"06","ap_id":"NULL","ow_id":"01","cl_id":"01","sl_status":"Сдана"},
+    {"id_sl":"07","sl_data":"28.07.2019","rent_id":"07","ap_id":"NULL","ow_id":"02","cl_id":"07","sl_status":"Сдана"},
+    {"id_sl":"08","sl_data":"25.02.2019","rent_id":"NULL","ap_id":"14","ow_id":"05","cl_id":"08","sl_status":"Продана"},
+    {"id_sl":"09","sl_data":"25.12.2019","rent_id":"NULL","ap_id":"10","ow_id":"06","cl_id":"09","sl_status":"Продана"},
+    {"id_sl":"10","sl_data":"29.11.2019","rent_id":"NULL","ap_id":"04","ow_id":"11","cl_id":"10","sl_status":"Продана"},
+    {"id_sl":"11","sl_data":"22.10.2019","rent_id":"NULL","ap_id":"12","ow_id":"12","cl_id":"12","sl_status":"Продана"},
+    {"id_sl":"12","sl_data":"20.09.2019","rent_id":"NULL","ap_id":"05","ow_id":"14","cl_id":"13","sl_status":"Продана"},
+    {"id_sl":"13","sl_data":"19.06.2019","rent_id":"NULL","ap_id":"03","ow_id":"13","cl_id":"14","sl_status":"Продана"},
+    {"id_sl":"14","sl_data":"14.05.2019","rent_id":"NULL","ap_id":"13","ow_id":"NULL","cl_id":"NULL","sl_status":"В продаже"},
+    {"id_sl":"15","sl_data":"10.02.2019","rent_id":"NULL","ap_id":"11","ow_id":"10","cl_id":"11","sl_status":"Продана"}
+]

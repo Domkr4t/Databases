@@ -1,0 +1,254 @@
+use Ev;
+	
+CREATE TABLE client 
+(	client_id int, 
+	client_name varchar(50) NOT NULL, 
+	client_telephone varchar(17) NOT NULL,
+	CONSTRAINT PK_client PRIMARY KEY (client_id)
+);
+
+CREATE TABLE worker 
+(	worker_id int, 
+	worker_name varchar(50) NOT NULL, 
+	worker_position varchar(30) NOT NULL,
+	worker_experience int NOT NULL,
+	CONSTRAINT PK_worker PRIMARY KEY (worker_id)
+);
+
+CREATE TABLE provider_ 
+(	provider_id int, 
+	provider_name varchar(30) NOT NULL, 
+	provider_address varchar(70) NOT NULL, 
+	provider_contacts varchar(60) NOT NULL,
+	CONSTRAINT PK_provider_ PRIMARY KEY (provider_id)
+);
+
+CREATE TABLE delivery 
+(	delivery_id int, 
+	delivery_date smalldatetime NOT NULL,
+	delivery_comment varchar(90) NOT NULL,
+	id_provider int
+	CONSTRAINT PK_delivery PRIMARY KEY (delivery_id)
+	CONSTRAINT FK_provider_ 
+		FOREIGN KEY (id_provider) 
+		REFERENCES provider_ (provider_id)
+);
+
+CREATE TABLE product 
+(	product_id int, 
+	product_name varchar(99) NOT NULL, 
+	product_comment varchar (99) NOT NULL,
+	product_price float (1) NOT NULL,
+	id_delivery int,
+	CONSTRAINT PK_product PRIMARY KEY (product_id),
+	CONSTRAINT FK_delivery 
+		FOREIGN KEY (id_delivery) 
+		REFERENCES delivery (delivery_id)
+);
+
+CREATE TABLE order_ 
+(	order_id int, 
+	order_date smalldatetime NOT NULL, 
+	id_worker int, 
+	id_client int, 
+	id_product int,                                       
+	CONSTRAINT PK_order PRIMARY KEY (order_id), 
+	CONSTRAINT FK_client 
+		FOREIGN KEY (id_client) 
+		REFERENCES client (client_id),
+	CONSTRAINT FK_worker 
+		FOREIGN KEY (id_worker) 
+		REFERENCES worker (worker_id),
+	CONSTRAINT FK_product 
+		FOREIGN KEY (id_product) 
+		REFERENCES product (product_id)
+);
+
+INSERT INTO client (client_id, client_name, client_telephone) VALUES 
+(01, 'Федорова Дарья Данииловна', '+7(999)781-61-45'),
+(02, 'Владимиров Савелий Егорович', '+7(999)703-11-69'),
+(03, 'Мельников Степан Евгеньевич', '+7(999)924-11-98'),
+(04, 'Ушакова Валерия Сергеевна', '+7(999)554-15-32'),
+(05, 'Любимова Елизавета Артёмовна', '+7(999)123-00-09'),
+(06, 'Зубов Дмитрий Кириллович', '+7(999)498-55-90'),
+(07, 'Киреева Александра Павловна', '+7(999)031-28-26'),
+(08, 'Князева Магда Богдановна', '+7(999)510-60-89'),
+(09, 'Крылова Полина Максимовна', '+7(999)336-97-91'),
+(10, 'Евсеев Семён Фёдорович', '+7(999)907-40-86'),
+(11, 'Панин Роман Русланович', '+7(999)173-00-09'),
+(12, 'Попова Таисия Евгеньевна', '+7(999)192-27-17'),
+(13, 'Суслова Виктория Елисеевна', '+7(999)540-24-25'),
+(14, 'Казаков Михаил Артёмович', '+7(999)338-31-45'),
+(15, 'Крылова Екатерина Андреевна', '+7(999)283-39-38');
+
+INSERT INTO worker (worker_id, worker_name, worker_position, worker_experience) VALUES 
+(01, 'Беспалова Магдалина Борисовна', 'Кассир', 3),
+(02, 'Худшев Худший Худшеевич', 'Кассир', 1),
+(03, 'Павлова Нонна Тимофеевна', 'Кассир', 0),
+(04, 'Шарапов Филипп Данилович', 'Кладовщик', 12),
+(05, 'Лихачёв Олег Робертович', 'Консультант', 7),
+(06, 'Зайцев Святослав Пантелеймонович', 'Главный кассир', 7),
+(07, 'Игнатьев Кирилл Тимурович', 'Кладовщик', 4),
+(08, 'Князева Магда Богдановна', 'Главный кассир', 4),
+(09, 'Прохорова Мартина Авксентьевна', 'Кассир', 5),
+(10, 'Фролов Артур Лукьянович', 'Консультант', 6),
+(11, 'Афанасьев Артем Романович', 'Главный кассир', 1),
+(12, 'Гаврилова Изабелла Николаевна', 'Консультант', 10),
+(13, 'Воронов Варлаам Мартынович', 'Кладовщик', 9),
+(14, 'Фокина Евгения Леонидовна', 'Консультант', 8),
+(15, 'Мясников Любомир Денисович', 'Кладовщик', 3);
+
+INSERT INTO provider_ (provider_id, provider_name, provider_address, provider_contacts) VALUES 
+(01, 'Balenciaga', '349 Christiansen Bypass Apt. 922 Bahringerland, NY 49646-1300', '404-375-6664, Balenciaga@gmail.com'),
+(02, 'Gucci', '84509 Dietrich Heights Suite 812 Barrowsstad, MT 86842', '504-526-0165, Gucci@gmail.com'),
+(03, 'Prada', '811 Rowland Overpass Suite 288 Skilestown, OR 66031', '217-893-4959, Prada@gmail.com'),
+(04, 'Louis Vuitton', '12152 Kiehn Mission Suite 149 Walterfurt, CT 14472', '325-928-7238, Louis_Vuitton@gmail.com'),
+(05, 'Moncler', '811 Rowland Overpass Suite 288 Skilestown, OR 66031', '227-893-4959, Moncler@gmail.com'),
+(06, 'Dior', '990 Bridgette Village Apt. 950 Kossberg, NV 07170-0533', '808-653-0033, Dior@gmail.com'),
+(07, 'Fendi', '588 Megane Fords Apt. 470 Lake Terrill, NE 62245-7019', '720-635-2749, Fendi@gmail.com'),
+(08, 'Versace', '19417 Mohammed Lodge Suite 803 Dietrichfort, RI 40892-7277', '786-930-3097, Versace@gmail.com'),
+(09, 'Bottega Veneta', '6594 Cielo Unions Stokesfort, PA 69584', '202-279-7158, Bottega_Veneta@gmail.com'),
+(10, 'Valentino', '1224 Schuster Plains Suite 694 Cassinstad, WV 80136-4022', '585-588-6415, Valentino@gmail.com'),
+(11, 'Burberry', '8949 Clark Knolls West Thad, IL 16626-8737', '920-687-1914, Burberry@gmail.com'),
+(12, 'NIKE', '36596 Andy Street Edmundfort, VA 88662', '530-543-5925, NIKE@gmail.com'),
+(13, 'Alexander McQueen', '4323 Bruen Square Suite 817 Spencerstad, AZ 18788-1087', '781-985-1898, Alexander_McQueen@gmail.com'),
+(14, 'Balmain', '60683 Spencer Roads Dylanburgh, CT 25298', '208-644-5865, Balmain@gmail.com'),
+(15, 'Miu Miu', '191 Orlo Locks North Matteo, NY 53454-4441', '702-476-4921, Miu_Miu@gmail.com');
+
+INSERT INTO delivery (delivery_id, delivery_date, delivery_comment) VALUES 
+(01, '2022-01-11 21:20:39', 'Поставка одежды Balenciaga'),
+(02, '2022-02-12 14:25:36', 'Поставка одежды Gucci'),
+(03, '2022-02-05 00:00:06', 'Поставка одежды Prada'),
+(04, '2022-03-06 21:48:46', 'Поставка одежды Louis Vuitton'),
+(05, '2022-05-08 14:16:12', 'Поставка одежды Moncler'),
+(06, '2022-06-10 20:05:06', 'Поставка одежды Dior'),
+(07, '2022-06-04 00:56:49', 'Поставка одежды Fendi'),
+(08, '2022-07-03 06:50:40', 'Поставка одежды Versace'),
+(09, '2022-07-06 23:52:58', 'Поставка одежды Bottega Veneta'),
+(10, '2022-08-09 14:19:10', 'Поставка одежды Valentino'),
+(11, '2022-09-10 05:17:27', 'Поставка одежды Burberry'),
+(12, '2022-09-10 23:47:43', 'Поставка одежды NIKE'),
+(13, '2022-09-08 15:48:36', 'Поставка одежды Alexander McQueen'),
+(14, '2022-11-08 11:45:44', 'Поставка одежды Balmain'),
+(15, '2022-12-09 10:37:09', 'Поставка одежды Miu Miu');
+
+INSERT INTO product (product_id, product_name, product_comment, product_price) VALUES 
+(01, 'Balenciaga Кроссовки', 'Размер 37RU Цвет: Черный', 11100.00),
+(02, 'Gucci Кроссовки', 'Размер 41RU Цвет: Серый', 43000.00),
+(03, 'Prada Сумка Re-Edition 2000', 'Цвет: Черный', 105000.00),
+(04, 'Louis Vuitton Очки Pre-Owned', 'Цвет: Серебряный', 110000.00),
+(05, 'Moncler Бомбер Hideki', 'Размер 56RU Цвет: Темно-коричневый', 69850.00),
+(06, 'Dior Свитер с высоким воротником SKI', 'Размер M Цвет: Белый', 57999.22),
+(07, 'Fendi Кожаные мюли', 'Размер 38RU Цвет: Черный', 138500.00),
+(08, 'Versace Текстильные кроссовки Chain Reaction', 'Размер 36.5RU Цвет: Розовый', 96500.99),
+(09, 'Bottega Veneta Шерстяной жакет', 'Размер 38RU Цвет: Бордовый', 249500.10),
+(10, 'Valentino Сумка Stud Sign', 'Цвет: Розовый', 254500.49),
+(11, 'Burberry Двусторонний шарф', 'Цвет: Бежевый', 75200.99),
+(12, 'NIKE Кроссовки Free Run Trail', 'Размер 39RU Цвет: Синий', 11700.00),
+(13, 'Alexander McQueen Шаль', 'Цвет: Коралловый', 46750.12),
+(14, 'Balmain Сумка Buzz 23 Balmain x Rossignol', 'Цвет: Коричневый', 277500.12),
+(15, 'Miu Miu Пальто из шерсти и кашемира', 'Размер 40RU Цвет: Темно-синий', 410000.99);
+
+
+INSERT INTO order_ (order_id, order_date) VALUES 
+(01, '2022-02-10 16:31:37'),
+(02, '2022-02-04 18:54:16'),
+(03, '2022-03-03 21:47:33'),
+(04, '2022-03-04 21:32:17'),
+(05, '2022-03-10 17:50:49'),
+(06, '2022-05-12 15:01:17'),
+(07, '2022-06-11 21:54:09'),
+(08, '2022-06-08 14:39:55'),
+(09, '2022-09-08 16:55:30'),
+(10, '2022-09-04 18:10:16'),
+(11, '2022-09-07 13:23:52'),
+(12, '2022-09-10 18:32:22'),
+(13, '2022-10-04 11:03:52'),
+(14, '2022-10-06 17:05:59'),
+(15, '2022-12-10 21:53:36');
+
+
+SELECT product_name, product_comment FROM product;
+
+SELECT worker_name, worker_position FROM worker WHERE worker_position = 'Консультант';
+
+SELECT ft.product_name, d.provider_name, d.provider_contacts, f.delivery_date, ft.product_price AS product_price_in_RUB
+FROM provider_ d LEFT OUTER JOIN delivery f
+ON d.provider_id = f.delivery_id
+LEFT OUTER JOIN product ft
+ON f.delivery_id = ft.product_id
+ORDER BY ft.product_price DESC;
+
+SELECT COUNT(worker_position) AS count, worker_position FROM worker GROUP BY worker_position;
+
+SELECT * FROM worker ORDER BY worker_position; 
+
+SELECT c.client_name, w.worker_name, p.product_name, o.order_date, p.product_price AS product_price_in_RUB
+FROM order_ o 
+LEFT OUTER JOIN client c
+ON o.order_id = c.client_id
+LEFT OUTER JOIN worker w
+ON o.order_id = w.worker_id
+LEFT OUTER JOIN product p
+ON o.order_id = p.product_id; 
+
+SELECT product_id, product_name, product_comment, product_price FROM product WHERE product_price >= 125000;
+
+
+
+CREATE VIEW delivery_view AS
+SELECT ft.product_name, d.provider_name, d.provider_contacts, f.delivery_date, ft.product_price AS product_price_in_RUB
+FROM provider_ d LEFT OUTER JOIN delivery f
+ON d.provider_id = f.delivery_id
+LEFT OUTER JOIN product ft
+ON f.delivery_id = ft.product_id;
+
+SELECT * FROM delivery_view;
+
+
+CREATE VIEW info_about_order AS
+SELECT c.client_name, w.worker_name, p.product_name, o.order_date, p.product_price AS product_price_in_RUB
+FROM order_ o 
+LEFT OUTER JOIN client c
+ON o.order_id = c.client_id
+LEFT OUTER JOIN worker w
+ON o.order_id = w.worker_id
+LEFT OUTER JOIN product p
+ON o.order_id = p.product_id; 
+
+SELECT * FROM info_about_order;
+
+
+CREATE VIEW which_position AS 
+SELECT worker_name, worker_position FROM worker GROUP BY worker_position, worker_name;
+
+SELECT * FROM which_position;
+
+
+
+CREATE UNIQUE INDEX ind_unique_name_provider ON provider_ (provider_name);
+
+CREATE UNIQUE INDEX ind_unique_name_product ON product (product_name);
+
+CREATE UNIQUE INDEX ind_unique_provider_contacts ON provider_ (provider_contacts);
+
+
+
+CREATE PROCEDURE price_product_raise_NDS (@percent float = 10) 
+AS
+BEGIN
+UPDATE product SET product_price = product_price * (1 + (@percent / 100))
+END
+
+EXECUTE price_product_raise_NDS;
+
+
+CREATE PROCEDURE plus_year_to_worker (@year int = 1)
+AS
+BEGIN
+UPDATE worker SET worker_experience = worker_experience - 1
+END
+
+EXECUTE plus_year_to_worker;
+
+

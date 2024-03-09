@@ -1,0 +1,389 @@
+-----Заполнение коллекции access--------
+db.access.insertMany(
+[
+    {
+        "access_id": 1,
+        "access_time": "01:00:00" 
+    },
+    {
+        "access_id": 2,
+        "access_time": "01:00:00" 
+    },
+    {
+        "access_id": 3,
+        "access_time": "01:00:00" 
+    },
+    {
+        "access_id": 4,
+        "access_time": "02:00:00" 
+    },
+    {
+        "access_id": 5,
+        "access_time": "05:00:00" 
+    },
+    {
+        "access_id": 6,
+        "access_time": "05:00:00" 
+    },
+    {
+        "access_id": 7,
+        "access_time": "12:00:00" 
+    },
+    {
+        "access_id": 8,
+        "access_time": "12:00:00" 
+    },
+    {
+        "access_id": 9,
+        "access_time": "12:00:00" 
+    },
+    {
+        "access_id": 10,
+        "access_time": "03:00:00" 
+    },
+    {
+        "access_id": 11,
+        "access_time": "02:00:00" 
+    },
+    {
+        "access_id": 12,
+        "access_time": "01:00:00" 
+    },
+    {
+        "access_id": 13,
+        "access_time": "03:00:00" 
+    },
+    {
+        "access_id": 14,
+        "access_time": "03:00:00" 
+    },
+    {
+        "access_id": 15,
+        "access_time": "01:00:00" 
+    }
+])
+
+
+-----Заполнение таблицы client--------
+db.client.insertMany(
+[
+    {
+        "client_id": 1,
+        "client_name": "Максимов Владислав Александрович",
+        "client_phone": "+7(495)594-46-82"
+    },
+    {
+        "client_id": 2,
+        "client_name": "Елисеев Иван Никитич",
+        "client_phone": "+7(495)653-79-25"
+    },
+    {
+        "client_id": 3,
+        "client_name": "Горлов Константин Александрович",
+        "client_phone": "+7(495)706-47-71"
+    },
+    {
+        "client_id": 4,
+        "client_name": "Комаров Дмитрий Максимович",
+        "client_phone": "+7(495)325-99-59"
+    },
+    {
+        "client_id": 5,
+        "client_name": "Виноградов Степан Николаевич",
+        "client_phone": "+7(495)449-12-29"
+    },
+    {
+        "client_id": 6,
+        "client_name": "Шапошников Александр Иванович",
+        "client_phone": "+7(495)736-75-18"
+    },
+    {
+        "client_id": 7,
+        "client_name": "Спиридонов Сергей Дамирович",
+        "client_phone": "+7(495)594-46-82"
+    },
+    {
+        "client_id": 8,
+        "client_name": "Максимов Владислав Александрович",
+        "client_phone": "+7(495)594-46-82"
+    },
+    {
+        "client_id": 9,
+        "client_name": "Максимов Владислав Александрович",
+        "client_phone": "+7(495)594-46-82"
+    },
+    {
+        "client_id": 10,
+        "client_name": "Максимов Владислав Александрович",
+        "client_phone": "+7(495)594-46-82"
+    },
+    {
+        "client_id": 11,
+        "client_name": "Максимов Владислав Александрович",
+        "client_phone": "+7(495)594-46-82"
+    },
+    {
+        "client_id": 12,
+        "client_name": "Максимов Владислав Александрович",
+        "client_phone": "+7(495)594-46-82"
+    },
+    {
+        "client_id": 13,
+        "client_name": "Максимов Владислав Александрович",
+        "client_phone": "+7(495)594-46-82"
+    },
+    {
+        "client_id": 14,
+        "client_name": "Максимов Владислав Александрович",
+        "client_phone": "+7(495)594-46-82"
+    },
+    {
+        "client_id": 15,
+        "client_name": "Максимов Владислав Александрович",
+        "client_phone": "+7(495)594-46-82"
+    }
+])
+
+
+-----Заполнение таблицы game--------
+db.game.insertMany(
+[
+    {
+        "game_id": 1,
+        "game_name": "Guardians of the Galaxy (2021)",
+        "game_description": "приключение"
+    },
+    {
+        "game_id": 2,
+        "game_name": "Half-Life 2",
+        "game_description": "шутер"
+    },
+    {
+        "game_id": 3,
+        "game_name": "Batman: Arkham City",
+        "game_description": "экшен"
+    },
+    {
+        "game_id": 4,
+        "game_name": "Diablo II: Resurrected",
+        "game_description": "приключение"
+    },
+    {
+        "game_id": 5,
+        "game_name": "Portal 2",
+        "game_description": "головоломка"
+    },
+    {
+        "game_id": 6,
+        "game_name": "Microsoft Simulator (2020)",
+        "game_description": "симулятор"
+    },
+    {
+        "game_id": 7,
+        "game_name": "Fallout 2",
+        "game_description": "РПГ"
+    },
+    {
+        "game_id": 8,
+        "game_name": "Red Dead Redemption",
+        "game_description": "экшен"
+    },
+    {
+        "game_id": 9,
+        "game_name": "The Elder Scrolls 5: Skyrim",
+        "game_description": "РПГ"
+    },
+    {
+        "game_id": 10,
+        "game_name": "Silent Hill 2 - Directors Cut",
+        "game_description": "Хоррор"
+    },
+    {
+        "game_id": 11,
+        "game_name": "Bloodborne",
+        "game_description": "экшен"
+    },
+    {
+        "game_id": 12,
+        "game_name": "Left 4 Dead 2",
+        "game_description": "шутер"
+    },
+    {
+        "game_id": 13,
+        "game_name": "Borderlands 2",
+        "game_description": "шутер"
+    },
+    {
+        "game_id": 14,
+        "game_name": "Bulletstorm",
+        "game_description": "шутер"
+    },
+    {
+        "game_id": 15,
+        "game_name": "Divinity: Original Sin",
+        "game_description": "стратегия"
+    }
+])
+
+
+-----Заполнение таблицы pc--------
+db.pc.insertMany(
+[
+    {
+        "pc_id": 1,
+        "pc_characteristic": "игровой",
+        "pc_num": 1
+    },
+    {
+        "pc_id": 2,
+        "pc_characteristic": "игровой",
+        "pc_num": 2
+    },
+    {
+        "pc_id": 3,
+        "pc_characteristic": "монтаж",
+        "pc_num": 3
+    },
+    {
+        "pc_id": 4,
+        "pc_characteristic": "монтаж",
+        "pc_num": 4
+    },
+    {
+        "pc_id": 5,
+        "pc_characteristic": "игровой",
+        "pc_num": 5
+    },
+    {
+        "pc_id": 6,
+        "pc_characteristic": "игровой",
+        "pc_num": 6
+    },
+    {
+        "pc_id": 7,
+        "pc_characteristic": "монтаж",
+        "pc_num": 7
+    },
+    {
+        "pc_id": 8,
+        "pc_characteristic": "рабочий",
+        "pc_num": 8
+    },
+    {
+        "pc_id": 9,
+        "pc_characteristic": "рабочий",
+        "pc_num": 9
+    },
+    {
+        "pc_id": 10,
+        "pc_characteristic": "рабочий",
+        "pc_num": 10
+    },
+    {
+        "pc_id": 11,
+        "pc_characteristic": "монтаж",
+        "pc_num": 11
+    },
+    {
+        "pc_id": 12,
+        "pc_characteristic": "игровой",
+        "pc_num": 12
+    },
+    {
+        "pc_id": 13,
+        "pc_characteristic": "игровой",
+        "pc_num": 13
+    },
+    {
+        "pc_id": 14,
+        "pc_characteristic": "монтаж",
+        "pc_num": 14
+    },
+    {
+        "pc_id": 15,
+        "pc_characteristic": "игровой",
+        "pc_num": 15
+    }
+])
+
+
+
+-----Заполнение таблицы worker--------
+db.worker.insertMany(
+[
+    {
+        "worker_id": 1,
+        "worker_name": "Кузнецов Леонид Никитич",
+        "worker_pos": 1
+    },
+    {
+        "worker_id": 2,
+        "worker_name": "Назарова Ясмина Данииловна",
+        "worker_pos": 1
+    },
+    {
+        "worker_id": 3,
+        "worker_name": "Герасимов Павел Николаевич",
+        "worker_pos": 2
+    },
+    {
+        "worker_id": 4,
+        "worker_name": "Филиппова Василиса Руслановна",
+        "worker_pos": 5
+    },
+    {
+        "worker_id": 5,
+        "worker_name": "Кольцова Дарья Артёмовна",
+        "worker_pos": 3
+    },
+    {
+        "worker_id": 6,
+        "worker_name": "Антипова Александра Константиновна",
+        "worker_pos": 1
+    },
+    {
+        "worker_id": 7,
+        "worker_name": "Федотова София Всеволодовна",
+        "worker_pos": 0
+    },
+    {
+        "worker_id": 8,
+        "worker_name": "Кулаков Макар Николаевич",
+        "worker_pos": 2
+    },
+    {
+        "worker_id": 9,
+        "worker_name": "Макарова Маргарита Фёдоровна",
+        "worker_pos": 6
+    },
+    {
+        "worker_id": 10,
+        "worker_name": "Крылова Амина Александровна",
+        "worker_pos": 1
+    },
+    {
+        "worker_id": 11,
+        "worker_name": "Семенов Матвей Львович",
+        "worker_pos": 2
+    },
+    {
+        "worker_id": 12,
+        "worker_name": "Гончарова Варвара Дмитриевна",
+        "worker_pos": 5
+    },
+    {
+        "worker_id": 13,
+        "worker_name": "Андреева Ирина Сергеевна",
+        "worker_pos": 1
+    },
+    {
+        "worker_id": 14,
+        "worker_name": "Сазонов Кирилл Александрович",
+        "worker_pos": 5
+    },
+    {
+        "worker_id": 15,
+        "worker_name": "Фролов Демид Константинович",
+        "worker_pos": 2
+    }
+])

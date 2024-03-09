@@ -1,0 +1,44 @@
+----Инфо о студиях со 2-ым этажем----
+db.apartments.find( {ap_type:"Студия со 2-ым этажем"}, {_id: 0})
+
+----Инфо о апаратаментах в которых комнат >3------
+db.apartments.find( {ap_room: {$gte:3} }, {_id: 0})
+
+----Сортировка квартир под сдачу по цене в порядке возрастания---
+db.rents.find( { }, {_id:0} ).sort({"rent_price": 1})
+
+----Все клиенты в алфавитном порядке---
+db.clients.find( { }, {_id:0} ).sort({"cl_name": 1})
+
+----Сортировка комнат под продажу у которых кол-во комнта больше двух по убыванию цены------
+db.apartments.find( {ap_room: {$gte:2} }, {_id: 0}).sort({"ap_price": -1})
+
+----Кол-во продаж 21.03.2019----
+db.sales.count( {sl_data: "21.03.2019"})
+
+----Кол-во продаж в 25.08.2019 со статусом сдана------
+db.sales.count( {$and: [{sl_data: {$gte:"25.08.2019"} }, {sl_status: "Сдана"}]})
+
+----Группировка комнат по типу комнат и количество каждого типа-----
+db.rents.aggregate( [ { $group : {_id: "$rent_type" , count_of_rent_type: {$count: {} } } } ] )
+
+----Инфо о тот какая квартира кому была сдана-----
+db.clients.aggregate( [ {
+    $lookup: {
+            from: "rents",
+            localField: "id_cl",
+            foreignField: "id_rent",
+            as: "client_rent"
+        }
+}] )
+
+
+----Инфо о тот какая квартира кому была продана-----
+db.clients.aggregate( [ {
+    $lookup: {
+            from: "sales",
+            localField: "id_cl",
+            foreignField: "id_sl",
+            as: "client_sales"
+        }
+}] )

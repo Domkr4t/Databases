@@ -1,0 +1,18 @@
+-- Создаем базу данных "Colizeum"
+use Colizeum
+
+-- Создаем коллекцию «ПК»
+db.createCollection("pc") 
+
+-- Создаем коллекцию «Работник»
+db.createCollection("worker") 
+
+-- Создаем коллекцию «Игра»
+db.createCollection("game") 
+
+-- Создаем коллекцию «Клиент»
+db.createCollection("client") 
+
+-- Создаем коллекцию «Access»
+db.createCollection("access") 
+

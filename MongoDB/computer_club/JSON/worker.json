@@ -1,0 +1,77 @@
+[
+    {
+        "worker_id": 1,
+        "worker_name": "Кузнецов Леонид Никитич",
+        "worker_pos": 1
+    },
+    {
+        "worker_id": 2,
+        "worker_name": "Назарова Ясмина Данииловна",
+        "worker_pos": 1
+    },
+    {
+        "worker_id": 3,
+        "worker_name": "Герасимов Павел Николаевич",
+        "worker_pos": 2
+    },
+    {
+        "worker_id": 4,
+        "worker_name": "Филиппова Василиса Руслановна",
+        "worker_pos": 5
+    },
+    {
+        "worker_id": 5,
+        "worker_name": "Кольцова Дарья Артёмовна",
+        "worker_pos": 3
+    },
+    {
+        "worker_id": 6,
+        "worker_name": "Антипова Александра Константиновна",
+        "worker_pos": 1
+    },
+    {
+        "worker_id": 7,
+        "worker_name": "Федотова София Всеволодовна",
+        "worker_pos": 0
+    },
+    {
+        "worker_id": 8,
+        "worker_name": "Кулаков Макар Николаевич",
+        "worker_pos": 2
+    },
+    {
+        "worker_id": 9,
+        "worker_name": "Макарова Маргарита Фёдоровна",
+        "worker_pos": 6
+    },
+    {
+        "worker_id": 10,
+        "worker_name": "Крылова Амина Александровна",
+        "worker_pos": 1
+    },
+    {
+        "worker_id": 11,
+        "worker_name": "Семенов Матвей Львович",
+        "worker_pos": 2
+    },
+    {
+        "worker_id": 12,
+        "worker_name": "Гончарова Варвара Дмитриевна",
+        "worker_pos": 5
+    },
+    {
+        "worker_id": 13,
+        "worker_name": "Андреева Ирина Сергеевна",
+        "worker_pos": 1
+    },
+    {
+        "worker_id": 14,
+        "worker_name": "Сазонов Кирилл Александрович",
+        "worker_pos": 5
+    },
+    {
+        "worker_id": 15,
+        "worker_name": "Фролов Демид Константинович",
+        "worker_pos": 2
+    }
+]

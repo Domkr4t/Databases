@@ -1,0 +1,77 @@
+[
+    {
+        "game_id": 1,
+        "game_name": "Guardians of the Galaxy (2021)",
+        "game_description": "приключение"
+    },
+    {
+        "game_id": 2,
+        "game_name": "Half-Life 2",
+        "game_description": "шутер"
+    },
+    {
+        "game_id": 3,
+        "game_name": "Batman: Arkham City",
+        "game_description": "экшен"
+    },
+    {
+        "game_id": 4,
+        "game_name": "Diablo II: Resurrected",
+        "game_description": "приключение"
+    },
+    {
+        "game_id": 5,
+        "game_name": "Portal 2",
+        "game_description": "головоломка"
+    },
+    {
+        "game_id": 6,
+        "game_name": "Microsoft Simulator (2020)",
+        "game_description": "симулятор"
+    },
+    {
+        "game_id": 7,
+        "game_name": "Fallout 2",
+        "game_description": "РПГ"
+    },
+    {
+        "game_id": 8,
+        "game_name": "Red Dead Redemption",
+        "game_description": "экшен"
+    },
+    {
+        "game_id": 9,
+        "game_name": "The Elder Scrolls 5: Skyrim",
+        "game_description": "РПГ"
+    },
+    {
+        "game_id": 10,
+        "game_name": "Silent Hill 2 - Directors Cut",
+        "game_description": "Хоррор"
+    },
+    {
+        "game_id": 11,
+        "game_name": "Bloodborne",
+        "game_description": "экшен"
+    },
+    {
+        "game_id": 12,
+        "game_name": "Left 4 Dead 2",
+        "game_description": "шутер"
+    },
+    {
+        "game_id": 13,
+        "game_name": "Borderlands 2",
+        "game_description": "шутер"
+    },
+    {
+        "game_id": 14,
+        "game_name": "Bulletstorm",
+        "game_description": "шутер"
+    },
+    {
+        "game_id": 15,
+        "game_name": "Divinity: Original Sin",
+        "game_description": "стратегия"
+    }
+]

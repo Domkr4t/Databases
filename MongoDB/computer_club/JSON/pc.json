@@ -1,0 +1,77 @@
+[
+    {
+        "pc_id": 1,
+        "pc_characteristic": "игровой",
+        "pc_num": 1
+    },
+    {
+        "pc_id": 2,
+        "pc_characteristic": "игровой",
+        "pc_num": 2
+    },
+    {
+        "pc_id": 3,
+        "pc_characteristic": "монтаж",
+        "pc_num": 3
+    },
+    {
+        "pc_id": 4,
+        "pc_characteristic": "монтаж",
+        "pc_num": 4
+    },
+    {
+        "pc_id": 5,
+        "pc_characteristic": "игровой",
+        "pc_num": 5
+    },
+    {
+        "pc_id": 6,
+        "pc_characteristic": "игровой",
+        "pc_num": 6
+    },
+    {
+        "pc_id": 7,
+        "pc_characteristic": "монтаж",
+        "pc_num": 7
+    },
+    {
+        "pc_id": 8,
+        "pc_characteristic": "рабочий",
+        "pc_num": 8
+    },
+    {
+        "pc_id": 9,
+        "pc_characteristic": "рабочий",
+        "pc_num": 9
+    },
+    {
+        "pc_id": 10,
+        "pc_characteristic": "рабочий",
+        "pc_num": 10
+    },
+    {
+        "pc_id": 11,
+        "pc_characteristic": "монтаж",
+        "pc_num": 11
+    },
+    {
+        "pc_id": 12,
+        "pc_characteristic": "игровой",
+        "pc_num": 12
+    },
+    {
+        "pc_id": 13,
+        "pc_characteristic": "игровой",
+        "pc_num": 13
+    },
+    {
+        "pc_id": 14,
+        "pc_characteristic": "монтаж",
+        "pc_num": 14
+    },
+    {
+        "pc_id": 15,
+        "pc_characteristic": "игровой",
+        "pc_num": 15
+    }
+]

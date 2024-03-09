@@ -1,0 +1,92 @@
+[
+    {
+        "store_adress_id": 1,
+        "phone": "7958374598",
+        "sity_name": "Москва",
+        "store_name": "Велосипед"
+    },
+    {
+        "store_adress_id": 2,
+        "phone": "7958374598",
+        "sity_name": "Москва",
+        "store_name": "Велосипед"
+    },
+    {
+        "store_adress_id": 3,
+        "phone": "7958374598",
+        "sity_name": "Москва",
+        "store_name": "Велосипед у дома"
+    },
+    {
+        "store_adress_id": 4,
+        "phone": "7958374598",
+        "sity_name": "Москва",
+        "store_name": "Велосипед косметик"
+    },
+    {
+        "store_adress_id": 5,
+        "phone": "7958374598",
+        "sity_name": "Москва",
+        "store_name": "Велосипед авто"
+    },
+    {
+        "store_adress_id": 6,
+        "phone": "7958374598",
+        "sity_name": "Москва",
+        "store_name": "Велосипед фаст"
+    },
+    {
+        "store_adress_id": 7,
+        "phone": "7958374598",
+        "sity_name": "Воронеж",
+        "store_name": "Велосипед у дома"
+    },
+    {
+        "store_adress_id": 8,
+        "phone": "7958374598",
+        "sity_name": "Воронеж",
+        "store_name": "Велосипед"
+    },
+    {
+        "store_adress_id": 9,
+        "phone": "7958374598",
+        "sity_name": "Томск",
+        "store_name": "Велосипед"
+    },
+    {
+        "store_adress_id": 10,
+        "phone": "7958374598",
+        "sity_name": "Томск",
+        "store_name": "Велосипед у дома"
+    },
+    {
+        "store_adress_id": 11,
+        "phone": "7958374598",
+        "sity_name": "Хабаровск",
+        "store_name": "Велосипед"
+    },
+    {
+        "store_adress_id": 12,
+        "phone": "7958374598",
+        "sity_name": "Омск",
+        "store_name": "Велосипед"
+    },
+    {
+        "store_adress_id": 13,
+        "phone": "7958374598",
+        "sity_name": "Екатеринбург",
+        "store_name": "Велосипед"
+    },
+    {
+        "store_adress_id": 14,
+        "phone": "7958374598",
+        "sity_name": "Самара",
+        "store_name": "Велосипед"
+    },
+    {
+        "store_adress_id": 15,
+        "phone": "7958374598",
+        "sity_name": "Ростов-на-дону",
+        "store_name": "Велосипед"
+    }
+]

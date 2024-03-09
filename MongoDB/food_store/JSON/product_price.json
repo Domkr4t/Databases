@@ -1,0 +1,77 @@
+[
+    {
+        "price_id": 1,
+        "product_id": 1,
+        "price": 268
+    },
+    {
+        "price_id": 2,
+        "product_id": 2,
+        "price": 111
+    },
+    {
+        "price_id": 3,
+        "product_id": 3,
+        "price": 475
+    },
+    {
+        "price_id": 4,
+        "product_id": 4,
+        "price": 10
+    },
+    {
+        "price_id": 5,
+        "product_id": 5,
+        "price": 500
+    },
+    {
+        "price_id": 6,
+        "product_id": 6,
+        "price": 68
+    },
+    {
+        "price_id": 7,
+        "product_id": 7,
+        "price": 78
+    },
+    {
+        "price_id": 8,
+        "product_id": 8,
+        "price": 105
+    },
+    {
+        "price_id": 9,
+        "product_id": 9,
+        "price": 168
+    },
+    {
+        "price_id": 10,
+        "product_id": 10,
+        "price": 220
+    },
+    {
+        "price_id": 11,
+        "product_id": 11,
+        "price": 299
+    },
+    {
+        "price_id": 12,
+        "product_id": 12,
+        "price": 305
+    },
+    {
+        "price_id": 13,
+        "product_id": 13,
+        "price": 1005
+    },
+    {
+        "price_id": 14,
+        "product_id": 14,
+        "price": 1684
+    },
+    {
+        "price_id": 15,
+        "product_id": 15,
+        "price": 80
+    }
+]

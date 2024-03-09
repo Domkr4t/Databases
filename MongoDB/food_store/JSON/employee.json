@@ -1,0 +1,92 @@
+[
+    {
+        "employee_id": 1,
+        "employee_name": "Павлов Владислав Даниилович",
+        "employee_rank": "Генеральный Директор",
+        "phone": "89150641507"
+    },
+    {
+        "employee_id": 2,
+        "employee_name": "Филатов Дмитрий Миронович",
+        "employee_rank": "Директор по закупкам",
+        "phone": "89123412431"
+    },
+    {
+        "employee_id": 3,
+        "employee_name": "Макарова Вероника Егоровна",
+        "employee_rank": "Продавец",
+        "phone": "89312414212"
+    },
+    {
+        "employee_id": 4,
+        "employee_name": "Казанцев Савва Львович",
+        "employee_rank": "Курьер",
+        "phone": "83124253742"
+    },
+    {
+        "employee_id": 5,
+        "employee_name": "Романова Анна Львовна",
+        "employee_rank": "Курьер",
+        "phone": "89457684920"
+    },
+    {
+        "employee_id": 6,
+        "employee_name": "Савельева Алиса Ивановна",
+        "employee_rank": "Курьер",
+        "phone": "89166522502"
+    },
+    {
+        "employee_id": 7,
+        "employee_name": "Денисова Варвара Степановна",
+        "employee_rank": "Продавец",
+        "phone": "89166522503"
+    },
+    {
+        "employee_id": 8,
+        "employee_name": "Логинова Ксения Макаровна",
+        "employee_rank": "Продавец",
+        "phone": "89166522504"
+    },
+    {
+        "employee_id": 9,
+        "employee_name": "Харитонова Ева Данииловна",
+        "employee_rank": "Продавец",
+        "phone": "89166522505"
+    },
+    {
+        "employee_id": 10,
+        "employee_name": "Морозова Мелания Дмитриевна",
+        "employee_rank": "Координатор",
+        "phone": "89166522506"
+    },
+    {
+        "employee_id": 11,
+        "employee_name": "Корнеева Алиса Романовна",
+        "employee_rank": "Координатор",
+        "phone": "89166522508"
+    },
+    {
+        "employee_id": 12,
+        "employee_name": "Тихомиров Дмитрий Ильич",
+        "employee_rank": "Администратор",
+        "phone": "89166522509"
+    },
+    {
+        "employee_id": 13,
+        "employee_name": "Волков Глеб Егорович",
+        "employee_rank": "Заместитель директора",
+        "phone": "89166522510"
+    },
+    {
+        "employee_id": 14,
+        "employee_name": "Сорокин Дмитрий Даниилович",
+        "employee_rank": "Контроль качества",
+        "phone": "89166522511"
+    },
+    {
+        "employee_id": 15,
+        "employee_name": "Сафонов Даниил Дамирович",
+        "employee_rank": "Колл-центр",
+        "phone": "89166522513"
+    }
+]

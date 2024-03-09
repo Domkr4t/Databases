@@ -1,0 +1,17 @@
+﻿[
+    {"id_rent":"01","rent_price":"50000","rent_room":"2","rent_type":"Студия со 2-ым этажем","rent_area":"Лобня, Мск.обл","rent_addr":"Чайковского 7к3, кв 33"},
+    {"id_rent":"02","rent_price":"30000","rent_room":"1","rent_type":"Студия","rent_area":"Лобня, Мск.обл","rent_addr":"Чайковского 7к4, кв 43"},
+    {"id_rent":"03","rent_price":"20000","rent_room":"2","rent_type":"Двухкомнатная с разделением на зоны","rent_area":"Москва","rent_addr":"Нью Дэл, кв 44"},
+    {"id_rent":"04","rent_price":"50000","rent_room":"2","rent_type":"Двухкомнатная с балконом","rent_area":"Лобня, Мск.обл","rent_addr":"Центральная, кв 37"},
+    {"id_rent":"05","rent_price":"39000","rent_room":"3","rent_type":"Трёхкомнатная с разделением на зоны","rent_area":"Лобня, Мск.обл","rent_addr":"Новая, кв 64"},
+    {"id_rent":"06","rent_price":"25000","rent_room":"1","rent_type":"Студия-лофт","rent_area":"Зеленоград, Мск.обл","rent_addr":"Маяковская, кв 38"},
+    {"id_rent":"07","rent_price":"65000","rent_room":"2","rent_type":"Двухкомнатная с разделением на зоны","rent_area":"Лобня, Мск.обл","rent_addr":"Крымская, кв 86"},
+    {"id_rent":"08","rent_price":"21864","rent_room":"2","rent_type":"Двухкомнатная без ремонта","rent_area":"Зеленоград, Мск.обл","rent_addr":"Чеховская, кв 37"},
+    {"id_rent":"09","rent_price":"88864","rent_room":"3","rent_type":"Студия со 2-ым этажем","rent_area":"Зеленоград, Мск.обл","rent_addr":"Чеховская, кв 17"},
+    {"id_rent":"10","rent_price":"43864","rent_room":"3","rent_type":"Студия со 2-ым этажем","rent_area":"Зеленоград, Мск.обл","rent_addr":"Малиновая, кв 16"},
+    {"id_rent":"11","rent_price":"34864","rent_room":"2","rent_type":"Двухкомнатная с разделением на зоны","rent_area":"Зеленоград, Мск.обл","rent_addr":"Кутузовский пр-кт, кв 109"},
+    {"id_rent":"12","rent_price":"98864","rent_room":"4","rent_type":"4-х комнатная с евроремонтом","rent_area":"Зеленоград, Мск.обл","rent_addr":"Кантимировская, кв 9"},
+    {"id_rent":"13","rent_price":"67864","rent_room":"3","rent_type":"Трёхкомнатная с ремонтом от застройщика","rent_area":"Москва","rent_addr":"Маркса, кв 32"},
+    {"id_rent":"14","rent_price":"65864","rent_room":"3","rent_type":"Трёхкомнатная с ремонтом от застройщика","rent_area":"Москва","rent_addr":"Ленинская, кв 14"},
+    {"id_rent":"15","rent_price":"91286","rent_room":"4","rent_type":"4-х комнатная с евроремонтом и балконом","rent_area":"Москва","rent_addr":"Достаевская, кв 55"}
+]

@@ -1,0 +1,43 @@
+------Клиенты по алфавиту------
+db.client.find( {}, {_id:0}).sort( {"client_name": 1} )
+
+-----Работники проработавшие более 5 лет-----
+db.worker.find( {"worker_pos": {$gte: 5}}, {_id:0} )
+
+-----Показывает все шутеры-------
+db.game.find( {"game_description": "шутер"}, {_id:0} )
+
+-----Работники по возрастанию стажа------
+db.worker.find( {}, {_id: 0}).sort( {"worker_pos": 1} )
+
+-----Игры по алфавиту-------
+db.game.find( {}, {_id: 0} ).sort( {"game_name": 1} )
+
+-----Количество шутеров-----
+db.game.count( {game_description: "шутер"} )
+
+-----Количество подключений в час ночи------
+db.access.count( {access_time: "01:00:00"} )
+
+-----Группировка игр по жанру------
+db.game.aggregate( [ { $group : {_id: "$game_description" , count_of_games: {$count: {} } } } ] )
+
+-----Время доступа клиентов-------
+db.client.aggregate( [ {
+    $lookup: {
+            from: "access",
+            localField: "client_id",
+            foreignField: "access_id",
+            as: "client_access"
+        }
+}] )
+
+----Какой работник обслуживал какой компьютер-----
+db.worker.aggregate( [ {
+    $lookup: {
+            from: "pc",
+            localField: "worker_id",
+            foreignField: "pc_id",
+            as: "Worker_serving_pc"
+        }
+}] )

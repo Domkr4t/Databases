@@ -1,0 +1,62 @@
+[
+    {
+        "category_id": 1,
+        "category_name": "Сыр"    
+    },
+    {
+        "category_id": 2,
+        "category_name": "Молочное и яйца"    
+    },
+    {
+        "category_id": 3,
+        "category_name": "Йогурты и десерты"    
+    },
+    {
+        "category_id": 4,
+        "category_name": "Овощи"    
+    },
+    {
+        "category_id": 5,
+        "category_name": "Фрукты и ягоды"    
+    },
+    {
+        "category_id": 6,
+        "category_name": "Экзотика"    
+    },
+    {
+        "category_id": 7,
+        "category_name": "Мясо и птица"    
+    },
+    {
+        "category_id": 8,
+        "category_name": "Колбаса и сосиски"    
+    },
+    {
+        "category_id": 9,
+        "category_name": "Рыба и дары моря"    
+    },
+    {
+        "category_id": 10,
+        "category_name": "Вода"    
+    },
+    {
+        "category_id": 11,
+        "category_name": "Соки и морсы"    
+    },
+    {
+        "category_id": 12,
+        "category_name": "Газировка и лимонады"    
+    },
+    {
+        "category_id": 13,
+        "category_name": "Холодный чай и квас"    
+    },
+    {
+        "category_id": 14,
+        "category_name": "Макароны"    
+    },
+    {
+        "category_id": 15,
+        "category_name": "Крупы"    
+    }
+]
